@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="11px" viewBox="0 0 15 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>payment/icons/check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Step-4" transform="translate(-380.000000, -579.000000)" fill="#F84D30" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(375.000000, 572.000000)">
+                <path d="M6.73817219,11.2030139 C6.36559408,10.7953326 5.7330689,10.7668759 5.32538765,11.139454 C4.91770641,11.5120321 4.8892497,12.1445573 5.26182781,12.5522386 L9.9431429,17.6746123 C10.3381232,18.1068064 11.0182601,18.1087241 11.4156713,17.6787642 L19.7343562,8.67876425 C20.1092274,8.27319049 20.084338,7.6405149 19.6787642,7.26564375 C19.2731905,6.89077261 18.6405149,6.915662 18.2656438,7.32123575 L10.6854818,15.5222265 L6.73817219,11.2030139 Z" id="payment/icons/check"></path>
+            </g>
+        </g>
+    </g>
+</svg>

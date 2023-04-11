@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# fonts
+--------------------------------------------------------------*/
+@font-face {
+	font-family: 'AvenirNextCyr-Bold';
+	src: url('http://wisenex.com/fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.woff') format('woff'),
+		 url('http://wisenex.com/fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Medium';
+	src: url('http://wisenex.com/fonts/AvenirNextCyr-Medium/AvenirNextCyr-Medium.woff') format('woff'),
+		 url('http://wisenex.com/fonts/AvenirNextCyr-Medium/AvenirNextCyr-Medium.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Regular';
+	src: url('http://wisenex.com/fonts/AvenirNextCyr-Regular/AvenirNextCyr-Regular.woff') format('woff'),
+		 url('http://wisenex.com/fonts/AvenirNextCyr-Regular/AvenirNextCyr-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Light';
+	src: url('http://wisenex.com/fonts/AvenirNextCyr-Light/AvenirNextCyr-Light.woff') format('woff'),
+		 url('http://wisenex.com/fonts/AvenirNextCyr-Light/AvenirNextCyr-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+/*--------------------------------------------------------------
+# end fonts
+--------------------------------------------------------------*/
+

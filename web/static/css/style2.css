@@ -1,0 +1,7995 @@
+/*--------------------------------------------------------------
+# fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'ChakraPetchBold';
+  src: url('../fonts/ChakraPetchBold/ChakraPetchBold.woff') format('woff'), url('../fonts/ChakraPetchBold/ChakraPetchBold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetchBoldItalic';
+  src: url('../fonts/ChakraPetchBoldItalic/ChakraPetchBoldItalic.woff') format('woff'),
+    url('../fonts/ChakraPetchBoldItalic/ChakraPetchBoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ChakraPetchSemiBold';
+  src: url('../fonts/ChakraPetchSemiBold/ChakraPetchSemiBold.woff') format('woff'),
+    url('../fonts/ChakraPetchSemiBold/ChakraPetchSemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetchSemiBoldItalic';
+  src: url('../fonts/ChakraPetchSemiBoldItalic/ChakraPetchSemiBoldItalic.woff') format('woff'),
+    url('../fonts/ChakraPetchSemiBoldItalic/ChakraPetchSemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ChakraPetchMedium';
+  src: url('../fonts/ChakraPetchMedium/ChakraPetchMedium.woff') format('woff'),
+    url('../fonts/ChakraPetchMedium/ChakraPetchMedium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetchMediumItalic';
+  src: url('../fonts/ChakraPetchMediumItalic/ChakraPetchMediumItalic.woff') format('woff'),
+    url('../fonts/ChakraPetchMediumItalic/ChakraPetchMediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ChakraPetchRegular';
+  src: url('../fonts/ChakraPetchRegular/ChakraPetchRegular.woff') format('woff'),
+    url('../fonts/ChakraPetchRegular/ChakraPetchRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetchItalic';
+  src: url('../fonts/ChakraPetchItalic/ChakraPetchItalic.woff') format('woff'),
+    url('../fonts/ChakraPetchItalic/ChakraPetchItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ChakraPetchLight';
+  src: url('../fonts/ChakraPetchLight/ChakraPetchLight.woff') format('woff'), url('../fonts/ChakraPetchLight/ChakraPetchLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ChakraPetchLightItalic';
+  src: url('../fonts/ChakraPetchLightItalic/ChakraPetchLightItalic.woff') format('woff'),
+    url('../fonts/ChakraPetchLightItalic/ChakraPetchLightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# end fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Bootstrap style
+--------------------------------------------------------------*/
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1200px;
+}
+
+/*--------------------------------------------------------------
+# End Bootstrap style
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# general style
+--------------------------------------------------------------*/
+*:focus {
+  outline: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'ChakraPetchRegular';
+  line-height: normal;
+  background-color: transparent !important;
+  color: white;
+}
+
+/* buttons */
+.btn-reset {
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.btn-sq {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 25px;
+}
+
+.btn-sq-br {
+  border: 1px solid #78ff73;
+  background-color: transparent;
+  line-height: 38px;
+  color: #78ff73;
+}
+
+.btn-sq-br:hover,
+.btn-sq-br:focus,
+.btn-sq-br:active {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn-nm {
+  font-family: 'ChakraPetchBold';
+  font-size: 30px;
+  line-height: 42px;
+  height: 42px;
+  padding: 0 40px;
+  filter: drop-shadow(3px 4px 0px rgba(0, 0, 0, 0.5));
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 575.98px) {
+  .btn-nm {
+    font-size: 15px;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 20px;
+  }
+}
+
+.btn-green {
+  background-color: #78ff73;
+  color: #000;
+}
+
+.btn-blue {
+  background: #4700f9;
+  color: #78ff73;
+}
+
+.btn-light-blue {
+  background: #2048e6;
+  color: #78ff73;
+}
+
+.btn-light-blue:hover,
+.btn-light-blue:focus,
+.btn-light-blue:active {
+  color: #78ff73;
+  opacity: 0.9;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+  color: #78ff73;
+  opacity: 0.8;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  color: #000;
+  opacity: 0.8;
+}
+
+.btn-octagon::before,
+.btn-octagon::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.btn-nm::before {
+  bottom: 100%;
+  height: 17px;
+}
+
+@media (max-width: 575.98px) {
+  .btn-nm::before {
+    height: 8px;
+  }
+}
+
+.btn-green::after,
+.btn-green::before {
+  border: 16px solid transparent;
+  border-bottom: 16px solid #78ff73;
+}
+
+@media (max-width: 575.98px) {
+  .btn-green::after,
+  .btn-green::before {
+    border: 8px solid transparent;
+    border-bottom: 8px solid #78ff73;
+  }
+}
+
+.btn-nm::after {
+  top: 100%;
+  height: 17px;
+}
+
+@media (max-width: 575.98px) {
+  .btn-nm::after {
+    height: 8px;
+  }
+}
+
+.btn-green::after {
+  transform: rotate(180deg);
+}
+
+/* end buttons */
+
+/*octagon*/
+.octagon {
+  position: relative;
+  z-index: 0;
+}
+
+.octagon::before,
+.octagon::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
+
+.octagon::before {
+  bottom: 100%;
+}
+
+.octagon::after {
+  top: 100%;
+  transform: rotate(180deg);
+}
+
+.octagon-wht::after,
+.octagon-wht::before {
+  border: 30px solid transparent;
+  border-bottom: 30px solid #fff;
+}
+
+.octagon-blc::after,
+.octagon-blc::before {
+  border: 30px solid transparent;
+  border-bottom: 30px solid #000;
+}
+
+/*end octagon*/
+
+.not-found {
+  background: #fff;
+  padding: 0 30px;
+  font-family: 'ChakraPetchBold';
+}
+
+.not-found__go {
+  color: #212529;
+  margin-bottom: 0;
+}
+
+.not-found__title {
+  margin-bottom: 40px;
+}
+/*custom radio&checkbox*/
+.custom-control {
+  padding-left: 35px;
+}
+
+.custom-control-label {
+  font-family: 'ChakraPetchMedium';
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.custom-control-label a {
+  color: #78ff73;
+}
+
+.custom-control-label::before {
+  width: 20px;
+  height: 20px;
+  border-color: #f30909;
+  background-color: transparent;
+  left: -35px;
+}
+
+.custom-control-label:hover::before {
+  border-color: #9da6b7;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #78ff73;
+}
+
+.custom-control-input:active ~ .custom-control-label::before {
+  background-color: #fff !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #78ff73;
+  background-color: #78ff73;
+}
+
+/*radio button*/
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  top: 9px;
+  bottom: 0;
+  left: -30px;
+  right: 0;
+}
+
+/*checkbox button*/
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+.custom-radio .custom-control-label::after,
+.custom-checkbox .custom-control-label::after {
+  width: 21px;
+  height: 21px;
+  left: -35px;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url('../img/check.svg');
+}
+
+
+
+.input {
+  background: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  height: 40px;
+  font-family: 'ChakraPetchSemiBold';
+  padding: 0 20px;
+  color: #000;
+  outline: none;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.input-brdr {
+  border: 1px solid #c3ced7;
+}
+
+.input.field-error {
+  border-color: #fc141c;
+}
+
+.error {
+  color: #fc141c;
+  font-size: 12px;
+  line-height: 17px;
+  display: block;
+  padding-top: 5px;
+}
+
+.input-brdr:hover,
+.input-brdr:focus {
+  border-color: #000;
+  transition: all 0.3s;
+}
+
+select.input {
+  padding-right: 25px;
+  background-image: url(../img/drop-grey-sm.svg);
+  background-position: 93% center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.label {
+  font-family: 'ChakraPetchMedium';
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 15px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-numer {
+  list-style-type: decimal;
+}
+
+.no-decorate:hover {
+  text-decoration: none;
+}
+
+a,
+button {
+  transition: all 0.3s linear;
+}
+
+.h2 {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 66px;
+  line-height: 76px;
+  text-transform: uppercase;
+}
+
+.h2 > span {
+  color: #78ff73;
+}
+
+@media (max-width: 767.98px) {
+  .h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.h3 {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.slogan {
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center;
+  color: #78ff73;
+  margin-bottom: 142px;
+}
+
+@media (max-width: 767.98px) {
+  .slogan {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .slogan {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.shadows {
+  position: relative;
+}
+
+.shadows::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 75px;
+  left: 0;
+  right: 0;
+  bottom: -75px;
+  top: auto;
+  background: linear-gradient(180deg, #23007c 0%, rgba(71, 0, 249, 0.0001) 100%);
+  opacity: 0.4;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.popover {
+  filter: drop-shadow(25px 25px 40px rgba(16, 39, 83, 0.6));
+  border-radius: 0;
+  border: none;
+}
+
+.popover-header {
+  font-family: 'ChakraPetchBold';
+  font-size: 18px;
+  line-height: 18px;
+  background-color: transparent;
+  padding: 15px 20px;
+}
+
+.popover-body {
+  padding: 20px 20px;
+}
+
+.popover ul {
+  padding-left: 15px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 600px;
+  }
+}
+
+.modal-content {
+  padding: 50px 60px 60px;
+  border-radius: 0;
+}
+
+@media (max-width: 767.98px) {
+  .modal-content {
+    padding: 50px 30px;
+  }
+}
+
+.modal-header {
+  border: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-header .close {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+  left: auto;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.modal-header .close:hover path {
+  fill: #000;
+}
+
+.modal-title {
+  font-family: 'ChakraPetchMedium';
+  font-size: 30px;
+  line-height: 36px;
+  color: #0d1118;
+  margin-bottom: 26px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-text {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 16px;
+  line-height: 24px;
+  color: #777e8a;
+}
+
+.verification-email .modal-text {
+  margin-bottom: 29px;
+}
+
+.modal-text a:hover,
+.modal-text a:focus,
+.modal-text a:active,
+.modal-text a,
+.modal-text .as-link {
+  color: #2048e6;
+}
+
+.verification-notice .modal-text {
+  margin-bottom: 40px;
+}
+
+.verification-notice .modal-btns__butt {
+  min-width: 158px;
+  display: block;
+  margin: 0 auto;
+}
+
+.verification-notice .btn-sq-br {
+  color: #0d1118;
+  border-color: #c3ced7;
+  margin-right: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .verification-notice .btn-sq-br {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .notification {
+    margin-bottom: 40px;
+  }
+}
+
+.notification__caption {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 37px;
+  margin-bottom: 38px;
+}
+
+.notification-box {
+  background-color: #fff;
+  padding: 50px 50px 60px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 991.98px) {
+  .notification-box {
+    padding: 40px 30px;
+  }
+}
+
+.notification__icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.notification__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0d1118;
+  margin-bottom: 10px;
+}
+
+.notification__text {
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 20px;
+  color: #777e8a;
+  margin-bottom: 0;
+}
+
+.link-green:hover,
+.link-green:active,
+.link-green:focus,
+.link-green {
+  color: #78ff73;
+}
+
+.link-blue:hover,
+.link-blue:active,
+.link-blue:focus,
+.link-blue {
+  color: #2048e6;
+}
+
+.see__all-btns {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #2048e6;
+}
+
+.see__all-icon {
+  margin-right: 7px;
+  fill: #2048e6;
+}
+/*--------------------------------------------------------------
+# end general style
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# animation for main screen
+--------------------------------------------------------------*/
+.anim__cross {
+  animation: rotating 4s infinite;
+  animation-delay: 1s;
+  animation-timing-function: steps(2);
+}
+
+@keyframes rotating {
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# end animation for main screen
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# header style
+--------------------------------------------------------------*/
+.header-main {
+  padding: 47px 0 236px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+.page-main {
+  padding-top: 47px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+.page-main::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to top, rgba(71, 0, 249, 1) 0%, rgba(71, 0, 249, 1) 10%, rgba(71, 0, 249, 1) 10%, rgba(71, 0, 249, 0) 100%);
+}
+
+@media (max-width: 991.98px) {
+  .header-main {
+    padding-bottom: 152px;
+    padding-top: 19px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-main {
+    padding-bottom: 80px;
+  }
+
+  .w-sm-50 {
+    width: 50%;
+  }
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .header__logo {
+    justify-content: flex-start;
+  }
+}
+
+.header__logo-link {
+  transform: translate(0, -2px);
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .header__logo-link {
+    transform: none;
+    display: block;
+  }
+
+  .header__logo-link img {
+    max-width: 80px;
+  }
+}
+
+.navbar-toggler {
+  padding: 0;
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    margin-right: 40px;
+  }
+}
+
+.nav__item:not(:first-child) {
+  margin-left: 62px;
+}
+
+@media (max-width: 991.98px) {
+  .nav__item:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+.header__auth {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__auth-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+@media (max-width: 991.98px) {
+  .header__auth-item:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+.header__link {
+  font-family: 'ChakraPetchRegular';
+  color: #fff;
+  font-size: 22px;
+  line-height: 22px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  color: #78ff73;
+}
+
+.header__link_signup {
+  width: 135px;
+  height: 50px;
+  line-height: 50px;
+  background: url(../img/btns-bg/signup.svg);
+  color: #78ff73;
+  border: none;
+}
+
+@media (max-width: 767.98px) {
+  .header__link_login,
+  .header__link_signup {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+    color: transparent;
+  }
+
+  .header__link_login {
+    background: transparent url(../img/login.svg) center center no-repeat;
+    border: 1px solid #78ff73;
+  }
+
+  .header__link_login:hover,
+  .header__link_login:focus,
+  .header__link_login:active {
+    border-color: #fff;
+  }
+
+  .header__link_signup {
+    background: #78ff73 url(../img/account.svg) center center no-repeat;
+  }
+}
+
+.header__link_signup:hover,
+.header__link_signup:focus,
+.header__link_signup:active {
+  filter: grayscale(100%);
+}
+
+.header__content {
+  padding: 150px 0 0;
+}
+
+@media (max-width: 991.98px) {
+  .header__content {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header__content {
+    padding-top: 60px;
+  }
+}
+
+.anim {
+  justify-content: center;
+  margin-bottom: 117px;
+}
+
+@media (max-width: 767.98px) {
+  .anim {
+    margin-bottom: 40px;
+  }
+}
+
+.anim__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 90px;
+  line-height: 90px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .anim__title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .anim__title {
+    font-size: 65px;
+    line-height: 65px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .anim__title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .anim__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.anim__title > span {
+  color: #78ff73;
+}
+
+.anim__cross {
+  display: block;
+  margin: 0 111px;
+}
+
+.anim__cur {
+  width: 130px;
+  height: 130px;
+}
+
+@media (max-width: 991.98px) {
+  .anim__cross {
+    margin: 0 50px;
+    width: 65px;
+    height: auto;
+  }
+
+  .anim__cur {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .anim__cross {
+    margin: 0 30px;
+    width: 54px;
+    height: auto;
+  }
+
+  .anim__cur {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .anim__cross {
+    margin: 0 20px;
+    width: 34px;
+    height: auto;
+  }
+
+  .anim__cur {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.header__butt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar-wrapper {
+    width: 0;
+    padding: 0;
+  }
+
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+    height: 100%;
+    background: #4700f9;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: -250px;
+    overflow-y: auto;
+    transition: left 0.5s ease;
+  }
+
+  .sidebar-backdrop {
+    content: '';
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .sidebar.visible {
+    left: 0px;
+    transition: left 0.7s ease;
+  }
+
+  .sidebar-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .sidebar__header {
+    margin-bottom: 60px;
+  }
+
+  .sidebar__close {
+    margin-right: 40px;
+  }
+
+  .sidebar__logo-link img {
+    max-width: 80px;
+  }
+
+  .nav {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .nav__item:nth-child(n) {
+    margin: 0 0 20px 0;
+  }
+
+  .header__link {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  .sidebar-contact__item {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-contact__icon {
+    display: block;
+    margin: 0 0 5px 0;
+  }
+
+  .sidebar-contact__des,
+  .sidebar-contact__tel {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .sidebar-contact__tel {
+    color: #78ff73;
+    margin-bottom: 0;
+  }
+
+  .sidebar-contact__des {
+    color: #fff;
+  }
+
+  .sidebar-footer {
+    margin-top: auto;
+  }
+
+  .sidebar__pay {
+    display: block;
+    font-size: 14px;
+    line-height: 14px;
+    color: #fff;
+    margin: 0 0 10px 0;
+  }
+
+  .sidebar-footer__payment {
+    margin-bottom: 30px;
+  }
+
+  .sidebar-footer__copy {
+    font-size: 14px;
+    line-height: 24px;
+    color: #78ff73;
+  }
+
+  .sidebar-footer__copy > span {
+    display: block;
+  }
+}
+
+/*--------------------------------------------------------------
+# end header style
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# footer style
+--------------------------------------------------------------*/
+.footer {
+  background-color: #4700f9;
+  padding: 100px 0 80px;
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-row > div {
+    width: 50%;
+  }
+
+  .footer__cell_mob {
+    width: 33.33%;
+  }
+}
+
+.footer-info,
+.footer__item {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 575.98px) {
+  .footer-info {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer__item {
+    margin-bottom: 20px;
+  }
+
+  .footer__item {
+    text-align: center;
+  }
+}
+
+.footer__title {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .footer__title {
+    font-family: 'ChakraPetchSemiBold';
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__link {
+  font-family: 'ChakraPetchRegular';
+  font-size: 16px;
+  line-height: 40px;
+  color: #78ff73;
+}
+
+@media (max-width: 575.98px) {
+  .footer__link {
+    font-size: 14px;
+    line-height: 34px;
+  }
+}
+
+.footer-info__tel:focus,
+.footer-info__tel:active,
+.footer-info__tel:hover,
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
+  color: #fff;
+}
+
+.footer-info__img {
+  display: block;
+  margin-bottom: 29px;
+}
+
+@media (max-width: 575.98px) {
+  .footer-info__img {
+    margin: 0 auto 10px;
+  }
+}
+
+.footer-info__tel {
+  color: #78ff73;
+  font-size: 16px;
+  line-height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-info__date {
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .footer-info__date,
+  .footer-info__tel {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.footer__license {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footer__license:first-child {
+  margin-bottom: 20px;
+}
+
+.footer__license > span {
+  color: #78ff73;
+}
+
+@media (max-width: 575.98px) {
+  .footer-info__license {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer__license {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .footer__license:first-child {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+.footer__payments {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .footer__payments {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__payments-title {
+  font-size: 14px;
+  line-height: 14px;
+  margin-right: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .footer__payments-title {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 10px;
+  }
+}
+
+.footer__payments-img {
+  display: block;
+  margin: 0 15px 0 0;
+}
+
+.footer__payments-img:last-child {
+  margin: 0;
+}
+
+.footer__copy {
+  color: #78ff73;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 575.98px) {
+  .footer__copy {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+/*--------------------------------------------------------------
+# end footer style
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# index style
+--------------------------------------------------------------*/
+.index {
+  background-color: #4700f9;
+}
+
+/*credit section*/
+.credit {
+  color: #fff;
+  padding: 140px 0;
+}
+
+@media (max-width: 767.98px) {
+  .credit {
+    padding: 50px 0;
+  }
+}
+
+.credit__h2 {
+  margin-bottom: 25px;
+}
+
+.credit__slogan {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .credit__slogan {
+    margin-bottom: 30px;
+  }
+}
+
+.credit-payment:first-child {
+  margin-right: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .credit-payment:first-child {
+    margin-right: 20px;
+  }
+}
+
+.exchange-form__des {
+  display: block;
+  font-family: 'ChakraPetchMedium';
+  font-size: 22px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 767.98px) {
+  .exchange-form__des {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .credit {
+    padding: 50px 0;
+  }
+}
+
+.exchange-form__des > span {
+  color: #78ff73;
+}
+
+.exchange-form__value {
+  display: flex;
+  align-items: center;
+}
+
+.exchange-form__input,
+.exchange-form__select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: 'ChakraPetchBold';
+  font-size: 52px;
+  line-height: 52px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767.98px) {
+  .exchange-form__input,
+  .exchange-form__select {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .exchange-form__input,
+  .exchange-form__select {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .exchange-form__select {
+    max-width: 82px !important;
+  }
+}
+
+.exchange-form__input {
+  padding: 0 12px 0 0;
+  color: #fff;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+}
+
+.exchange-form__select {
+  padding: 0 30px 0 0;
+  color: #78ff73;
+  background-image: url(../img/green-select.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  max-width: 165px;
+}
+
+.exchange-form__butt {
+  margin-top: 46px;
+  display: inline-block;
+}
+
+.buy-steps__butt:hover,
+.exchange-form__butt:hover {
+  text-decoration: none;
+}
+
+.exchange-form__time {
+  font-size: 22px;
+  line-height: 22px;
+  color: #fff;
+  padding-top: 85px;
+  margin-bottom: 79px;
+}
+
+@media (max-width: 767.98px) {
+  .exchange-form__time {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+}
+
+.exchange-form__time > a {
+  color: #78ff73;
+}
+
+.exchange-form__time > span {
+  color: #78ff73;
+  cursor: pointer;
+}
+
+.exchange-form__time > span:hover {
+  text-decoration: underline
+}
+
+.credit-payment {
+  width: 100%;
+}
+
+.credit-payment:first-child {
+  max-width: 46px;
+}
+
+.credit-payment:last-child {
+  max-width: 70px;
+}
+
+/*steps section*/
+
+.steps {
+  position: relative;
+  z-index: 0;
+}
+
+.steps__wrapper {
+  padding: 140px 0;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767.98px) {
+  .steps__wrapper {
+    padding: 50px 0;
+  }
+}
+
+.steps::after,
+.steps::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.steps::before {
+  left: 0;
+  background: url(../img/pattern-blu.svg) left top repeat;
+}
+
+.steps::after {
+  right: 0;
+  left: auto;
+  background: #000 url(../img/dark_pattern.png) left top repeat;
+}
+
+.steps__logo {
+  display: block;
+  margin: 0 auto 50px;
+}
+
+@media (max-width: 767.98px) {
+  .steps__logo {
+    max-width: 40px;
+  }
+}
+
+.steps__h2 {
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .steps__h2 {
+    margin-bottom: 55px;
+  }
+}
+
+.steps__h2 > span {
+  color: #78ff73;
+  display: block;
+}
+
+.steps__text-wrapper > div:first-child {
+  margin-bottom: 80px;
+}
+
+.steps__text-wrapper > div:nth-child(2) {
+  margin-bottom: 114px;
+}
+
+.steps__text-wrapper > div:last-child {
+  margin-bottom: 117px;
+}
+
+@media (max-width: 767.98px) {
+  .steps__text-wrapper > div:nth-child(n) {
+    margin-bottom: 60px;
+  }
+}
+
+.steps__text {
+  color: #78ff73;
+  font-size: 22px;
+  line-height: 34px;
+  max-width: 472px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .steps__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.steps__numeric .steps__text {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  max-width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .steps__numeric .steps__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.steps__numeric::after {
+  position: absolute;
+  z-index: 0;
+  right: -27px;
+  top: 0;
+  left: auto;
+  font-family: 'ChakraPetchSemiBold';
+  color: #78ff73;
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991.98px) {
+  .steps__numeric::after {
+    right: -10px;
+    top: -45px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .steps__numeric::after {
+    font-size: 24px;
+    line-height: 28px;
+    top: -35px;
+  }
+}
+
+.steps__numeric_01::after {
+  content: '01';
+}
+
+.steps__numeric_02::after {
+  content: '02';
+}
+
+.steps__numeric_03::after {
+  content: '03';
+}
+
+.steps__butt {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 98px;
+}
+
+@media (max-width: 767.98px) {
+  .steps__butt {
+    margin-bottom: 30px;
+  }
+}
+
+.steps__go {
+  font-size: 22px;
+  line-height: 22px;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .steps__go {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.steps__go > a {
+  color: #78ff73;
+}
+
+/*trading*/
+
+.trading {
+  padding: 140px 0 0;
+}
+
+@media (max-width: 767.98px) {
+  .trading {
+    padding: 50px 0 0;
+  }
+}
+
+.trading__h2 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .trading .slogan {
+    margin-bottom: 110px;
+  }
+}
+
+.trading-accept {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #fff;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 991.98px) {
+  .trading-accept {
+    max-width: 600px;
+  }
+
+  .trading-accept__wrapper {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept {
+    max-width: 278px;
+  }
+
+  .trading-accept__wrapper {
+    padding: 0;
+  }
+}
+
+.trading-accept__content {
+  transform: translateY(-23px);
+  padding-bottom: 12px;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept__content {
+    transform: 0;
+    padding-bottom: 0;
+  }
+}
+
+.trading-accept::before,
+.trading-accept::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.trading-accept::before {
+  top: -180px;
+  height: 90px;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept::before {
+    top: -80px;
+    height: 40px;
+  }
+}
+
+.trading-accept::after {
+  bottom: -180px;
+  height: 90px;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept::after {
+    bottom: -80px;
+    height: 40px;
+  }
+}
+
+.trading-accept::after,
+.trading-accept::before {
+  border: 96px solid transparent;
+  border-bottom: 84px solid #fff;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept::after,
+  .trading-accept::before {
+    border: 40px solid transparent;
+    border-bottom: 40px solid #fff;
+  }
+}
+
+.trading-accept__title {
+  font-family: 'ChakraPetchRegular';
+  font-size: 28px;
+  line-height: 44px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept__title {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 20px;
+  }
+}
+
+.trading-accept__wrapper {
+  max-width: 597px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept__wrapper {
+    padding: 0 45px;
+  }
+}
+
+.trading-accept__img {
+  display: block;
+  margin: 0 40px 25px 0;
+}
+
+.trading-accept__img:last-child,
+.trading-accept__img:nth-child(6) {
+  margin-right: 0;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept__img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 18px 15px 0;
+  }
+
+  .trading-accept__img:nth-child(4),
+  .trading-accept__img:nth-child(7) {
+    margin-right: 0;
+  }
+
+  .trading-accept__img:nth-child(1) {
+    max-width: 28px;
+  }
+
+  .trading-accept__img:nth-child(2) {
+    max-width: 44px;
+  }
+
+  .trading-accept__img:nth-child(3) {
+    max-width: 18px;
+  }
+
+  .trading-accept__img:nth-child(4) {
+    max-width: 34px;
+  }
+
+  .trading-accept__img:nth-child(5) {
+    max-width: 47px;
+  }
+
+  .trading-accept__img:nth-child(6) {
+    max-width: 51px;
+    margin-right: 20px;
+  }
+
+  .trading-accept__img:nth-child(7) {
+    max-width: 51px;
+  }
+
+  .trading-accept__img:nth-child(8) {
+    max-width: 22px;
+  }
+
+  .trading-accept__img:nth-child(9) {
+    max-width: 22px;
+  }
+  .trading-accept__img:nth-child(10) {
+    max-width: 15px;
+  }
+}
+
+.trading-accept__logo {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  margin-top: -66px;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept__logo {
+    max-width: 40px;
+  }
+}
+
+.trading-accept__logo_left {
+  left: -54px;
+}
+
+.trading-accept__logo_right {
+  right: -54px;
+  left: auto;
+}
+
+@media (max-width: 767.98px) {
+  .trading-accept__logo_left {
+    left: -20px;
+    margin-top: -32px;
+  }
+
+  .trading-accept__logo_right {
+    right: -20px;
+    margin-top: -32px;
+  }
+}
+
+.trading__picture {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: -14px auto 0;
+}
+
+@media (max-width: 767.98px) {
+  .trading__picture {
+    max-width: 180px;
+  }
+}
+
+/*why section*/
+
+.why {
+  padding: 140px 0 150px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .why {
+    padding: 50px 0;
+  }
+}
+
+.why__h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .why__h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.why__slogan {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .why__slogan {
+    margin-bottom: 20px;
+  }
+}
+
+.why__item {
+  margin-bottom: 130px;
+}
+
+.why__item-num {
+  display: block;
+  color: #78ff73;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 23px;
+}
+
+.why__item-title {
+  color: #78ff73;
+  margin-bottom: 40px;
+  margin-bottom: 23px;
+}
+
+.why__item-text {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+@media (max-width: 767.98px) {
+  .why__item {
+    margin-bottom: 20px;
+  }
+
+  .why__item-num {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 5px;
+  }
+
+  .why__item-title {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+
+  .why__item-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.why__butt {
+  display: inline-block;
+  vertical-align: middle;
+}
+/*map section*/
+.map {
+  padding: 140px 0 72px;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .map {
+    padding: 50px 0;
+  }
+}
+
+.map__h2 {
+  margin-bottom: 54px;
+}
+
+@media (max-width: 767.98px) {
+  .map__h2 {
+    margin-bottom: 30px;
+  }
+}
+
+/*accessible section*/
+.accessible {
+  padding: 140px 0 50px;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .accessible {
+    padding: 50px 0;
+  }
+}
+
+.accessible__item {
+  margin-bottom: 92px;
+}
+
+@media (max-width: 767.98px) {
+  .accessible__item {
+    margin-bottom: 20px;
+  }
+}
+
+.accessible__title {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .accessible__title {
+    margin-bottom: 10px;
+  }
+}
+
+.accessible__slogan {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .accessible__slogan {
+    max-width: 304px;
+    margin: 0 auto 25px;
+  }
+}
+
+.accessible__icon-wrap {
+  height: 60px;
+  margin: 0 auto 20px;
+}
+
+.accessible__caption {
+  margin-bottom: 23px;
+}
+
+@media (max-width: 767.98px) {
+  .accessible__caption {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.accessible__text {
+  color: #78ff73;
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .accessible__text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/*available section*/
+.available {
+  padding: 140px 0 60px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .available {
+    padding: 50px 0;
+  }
+}
+
+.available__title {
+  margin-bottom: 30px;
+}
+
+.available__slogan {
+  margin-bottom: 74px;
+}
+
+@media (max-width: 767.98px) {
+  .available__slogan {
+    max-width: 304px;
+    margin: 0 auto 10px;
+  }
+
+  .available__icon-pic {
+    max-width: 100px;
+  }
+}
+
+.available__item {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .available__item {
+    margin-bottom: 30px;
+  }
+}
+
+.available__icon {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .available__icon {
+    margin-bottom: 10px;
+  }
+}
+
+.available__caption {
+  color: #78ff73;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.available__text {
+  font-size: 22px;
+  line-height: 34px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .available__caption {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .available__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+/*faq section*/
+.ask {
+  padding: 140px 0 100px;
+}
+
+@media (max-width: 767.98px) {
+  .ask {
+    padding: 50px 0;
+  }
+}
+
+.ask__h2 {
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.ask__h2 > span {
+  display: block;
+}
+
+.ask__panel {
+  padding: 20px 50px 20px;
+  position: relative;
+  z-index: 0;
+  background-color: #78ff73;
+  margin-bottom: 60px;
+}
+
+.ask__panel.ask__collapse_show {
+  background-color: #fff;
+}
+
+.ask__panel::before,
+.ask__panel::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 24px;
+}
+
+.ask__panel::before {
+  bottom: 100%;
+}
+
+.ask__panel::after {
+  top: 100%;
+  transform: rotate(180deg);
+}
+
+.ask__panel::after,
+.ask__panel::before {
+  border: 23px solid transparent;
+  border-bottom: 20px solid#78FF73;
+}
+
+.ask__panel.ask__collapse_show::after,
+.ask__panel.ask__collapse_show::before {
+  border-bottom: 20px solid#fff;
+}
+
+.ask__panel_title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #4700f9;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .ask__panel_title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+.ask__panel_title > a {
+  color: #4700f9;
+}
+
+.ask__body {
+  padding-top: 24px;
+}
+
+.ask__text {
+  color: #4700f9;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+@media (max-width: 767.98px) {
+  .ask__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.ask__text:last-child {
+  margin-bottom: 0;
+}
+
+.ask__link::after {
+  content: url(../img/ask-arr.svg);
+  position: absolute;
+  z-index: 0;
+  left: auto;
+  right: 40px;
+  top: 22px;
+  bottom: auto;
+  margin: auto 0 auto 0;
+  transform: rotate(180deg);
+  transition: all 0.3s linear;
+}
+
+@media (max-width: 767.98px) {
+  .ask__link::after {
+    right: 20px;
+  }
+}
+
+.ask__link[aria-expanded='true']::after {
+  transform: rotate(0deg);
+}
+
+/*action section*/
+.action {
+  padding: 140px 0;
+  color: #fff;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+@media (max-width: 767.98px) {
+  .action {
+    padding: 50px 0;
+  }
+}
+
+.action__h2 {
+  line-height: 66px;
+  margin-bottom: 30px;
+}
+
+.action__slogan {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .action__slogan {
+    margin-bottom: 40px;
+  }
+}
+/*--------------------------------------------------------------
+# end index style
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# buy step 1
+--------------------------------------------------------------*/
+.buy-steps {
+  position: relative;
+  z-index: 0;
+}
+
+.buy-steps__wrapper {
+  padding: 44px 0 161px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.buy-steps__logo {
+  display: block;
+  margin: 0 auto 37px;
+}
+
+.buy-steps::after,
+.buy-steps::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.buy-steps::before {
+  left: 0;
+  background: url(../img/pattern-blu.svg) left top repeat;
+}
+
+.buy-steps::after {
+  right: 0;
+  left: auto;
+  background: #000 url(../img/dark_pattern.png) left top repeat;
+}
+
+.buy-steps__h2 {
+  margin-bottom: 34px;
+}
+
+.buy-steps__line {
+  max-width: 830px;
+  margin: 0 auto 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__line {
+    max-width: 545px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .buy-steps__line {
+    max-width: 300px;
+  }
+}
+
+.buy-steps__line-item {
+  padding-bottom: 40px;
+  margin-right: 2px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+}
+
+.buy-steps__line-item > span {
+  position: absolute;
+  z-index: 0;
+  font-size: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.buy-steps__line-item.done > span,
+.buy-steps__line-item.active > span {
+  color: #78ff73;
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__line-item > span {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .buy-steps__line-item > span {
+    font-size: 10px;
+    line-height: 10px;
+    white-space: pre-wrap;
+    text-align: left;
+    max-width: 60px;
+  }
+}
+
+.buy-steps__line-item:first-child > span {
+  left: -74px;
+}
+
+.buy-steps__line-item:nth-child(2) > span {
+  left: -8px;
+}
+
+.buy-steps__line-item:nth-child(3) > span {
+  left: -6px;
+}
+
+.buy-steps__line-item:nth-child(4) > span {
+  right: 2px;
+}
+
+.buy-steps__line-item:last-child > span {
+  right: -56px;
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__line-item:first-child > span {
+    left: -56px;
+  }
+
+  .buy-steps__line-item:nth-child(2) > span {
+    left: -6px;
+  }
+
+  .buy-steps__line-item:nth-child(4) > span {
+    right: -10px;
+  }
+
+  .buy-steps__line-item:last-child > span {
+    right: -50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .buy-steps__line-item:first-child > span {
+    left: -10px;
+  }
+
+  .buy-steps__line-item:nth-child(2) > span {
+    left: 7px;
+  }
+
+  .buy-steps__line-item:nth-child(3) > span {
+    left: 12px;
+  }
+
+  .buy-steps__line-item:nth-child(4) > span {
+    right: -6px;
+  }
+
+  .buy-steps__line-item:last-child > span {
+    right: -35px;
+  }
+}
+
+.buy-steps__line-item::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  border-bottom: 1px dashed #78ff73;
+  bottom: -2px;
+}
+
+.buy-steps__line-item:first-child::after {
+  left: 13px;
+  width: 190px;
+}
+
+.buy-steps__line-item:nth-child(2)::after {
+  left: 55px;
+  width: 188px;
+}
+
+.buy-steps__line-item:nth-child(3)::after {
+  left: 95px;
+  width: 188px;
+}
+
+.buy-steps__line-item:nth-child(4)::after {
+  left: 135px;
+  width: 189px;
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__line-item:first-child::after {
+    left: 11px;
+    width: 120px;
+  }
+
+  .buy-steps__line-item:nth-child(2)::after {
+    left: 39px;
+    width: 120px;
+  }
+
+  .buy-steps__line-item:nth-child(3)::after {
+    left: 68px;
+    width: 120px;
+  }
+
+  .buy-steps__line-item:nth-child(4)::after {
+    left: 94px;
+    width: 120px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .buy-steps__line-item:first-child::after {
+    left: 11px;
+    width: 57px;
+  }
+
+  .buy-steps__line-item:nth-child(2)::after {
+    left: 25px;
+    width: 57px;
+  }
+
+  .buy-steps__line-item:nth-child(3)::after {
+    left: 40px;
+    width: 57px;
+  }
+
+  .buy-steps__line-item:nth-child(4)::after {
+    left: 49px;
+    width: 54px;
+  }
+}
+
+.buy-steps__line-item:last-child::after {
+  display: none;
+}
+
+.buy-steps__line-item.done::after,
+.buy-steps__line-item.active::after {
+  border-bottom-style: solid;
+}
+
+.buy-steps__line-item::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #78ff73;
+  position: absolute;
+  z-index: 1;
+  bottom: -10px;
+}
+
+.buy-steps__line-item.active::before {
+  border-width: 5px;
+}
+
+.buy-steps__line-item.done::before {
+  content: url(../img/done.svg);
+  border: none;
+}
+
+.buy-steps__line-item:first-child::before {
+  left: -4px;
+}
+
+.buy-steps__line-item:nth-child(2)::before {
+  left: 37px;
+}
+
+.buy-steps__line-item:nth-child(3)::before {
+  left: 77px;
+}
+
+.buy-steps__line-item:nth-child(4)::before {
+  right: 31px;
+}
+
+.buy-steps__line-item:last-child::before {
+  right: -9px;
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__line-item:first-child::before {
+    left: -4px;
+  }
+
+  .buy-steps__line-item:nth-child(2)::before {
+    left: 22px;
+  }
+
+  .buy-steps__line-item:nth-child(3)::before {
+    left: 49px;
+  }
+
+  .buy-steps__line-item:nth-child(4)::before {
+    left: 78px;
+  }
+
+  .buy-steps__line-item:last-child::before {
+    right: -12px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .buy-steps__line-item:first-child::before {
+    left: -4px;
+  }
+
+  .buy-steps__line-item:nth-child(2)::before {
+    left: 7px;
+  }
+
+  .buy-steps__line-item:nth-child(3)::before {
+    left: 23px;
+  }
+
+  .buy-steps__line-item:nth-child(4)::before {
+    left: 34px;
+  }
+
+  .buy-steps__line-item:last-child::before {
+    right: 1px;
+  }
+}
+
+.buy-steps__payment .buy-steps__caption {
+  margin-bottom: 37px;
+}
+
+.buy-steps__info .buy-steps__caption {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__payment {
+    margin-bottom: 100px;
+  }
+}
+
+.buy-steps__payment-type {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  min-height: 109px;
+}
+
+.buy-steps__payment-type img {
+  width: inherit;
+}
+
+.buy-steps__payment-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 0 5px;
+  min-height: 96px;
+  width: 100%;
+  margin-bottom: 13px;
+  cursor: pointer;
+  max-width: 96px;
+}
+
+.buy-steps__payment-wrap:not(:last-child) {
+  margin-right: 28px;
+}
+
+@media (max-width: 575.98px) {
+  .buy-steps__payment-wrap:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.buy-steps__payment-wrap.active {
+  box-shadow: inset 0 0 0 2px #78ff73, inset 0 0 0 3px #3e00da;
+}
+
+.buy-steps__item {
+  margin-bottom: 13px;
+}
+
+.buy-steps__actions {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.buy-steps__payment-start .buy-steps__actions {
+  padding-top: 13px;
+}
+
+@media (max-width: 575.98px) {
+  .buy-steps__actions {
+    flex-direction: column;
+  }
+}
+
+/*.buy-steps__checkboxes {
+  padding-right: 36px;
+}
+
+@media (max-width: 575.98px) {
+  .buy-steps__checkboxes {
+    padding: 0 0 40px;
+  }
+}*/
+
+.buy-steps__captcha {
+  flex-grow: 1;
+  /*padding-top: 6px;*/
+}
+
+.buy-steps__checkboxes .custom-control:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.buy-steps__payment-start .buy-steps__checkboxes .custom-control:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.buy-steps__ssl {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 16px;
+  line-height: 16px;
+  color: #78ff73;
+  margin-bottom: 0;
+}
+
+.buy-steps__ssl:before {
+  content: url(../img/lock.svg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  transform: translateY(2px);
+}
+
+.buy-steps__change-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buy-steps__from,
+.buy-steps__to {
+  font-family: 'ChakraPetchMedium';
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 55px;
+  position: relative;
+  z-index: 0;
+}
+
+.buy-steps__exchange-ic {
+  display: block;
+  margin: 0 48px 55px;
+}
+
+.buy-steps__name {
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  color: #78ff73;
+  text-transform: uppercase;
+  position: absolute;
+  left: 2px;
+  bottom: -25px;
+}
+
+.buy-steps__info-top {
+  margin-bottom: 37px;
+}
+
+.buy-steps__link-recalc,
+.buy-steps__info-recalc {
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+}
+
+.buy-steps__link-recalc:hover,
+.buy-steps__link-recalc:focus,
+.buy-steps__link-recalc:active {
+  color: #78ff73;
+  text-decoration: underline;
+}
+
+.buy-steps__info-recalc {
+  margin-bottom: 8px;
+}
+
+.buy-steps__link-recalc {
+  display: inline-block;
+  vertical-align: middle;
+  color: #78ff73;
+  margin-bottom: 41px;
+}
+
+.buy-steps__info-full {
+  max-width: 318px;
+}
+
+.buy-steps__info-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.buy-steps__info-row:last-child {
+  margin-bottom: 0;
+}
+
+.buy-steps__info-rate {
+  font-family: 'ChakraPetchMedium';
+  font-size: 16px;
+  line-height: 12px;
+  margin-right: 10px;
+  /*min-width: 190px;*/
+}
+
+.buy-steps__info-val {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 16px;
+  line-height: 14px;
+  color: #78ff73;
+  text-align: right;
+  word-break: break-all;
+}
+
+.buy-steps__info-wallet {
+  line-height: 24px;
+  transform: translateY(-6px);
+}
+
+.buy-steps__butt-cancel {
+  margin-right: 20px;
+}
+/*--------------------------------------------------------------
+# end buy step 1
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# buy step 2
+--------------------------------------------------------------*/
+.buy-steps__item-radiobtns {
+  display: flex;
+  align-items: center;
+  transform: translateY(11px);
+}
+
+@media (max-width: 991.98px) {
+  .buy-steps__item-radiobtns {
+    margin-bottom: 13px;
+    transform: none;
+  }
+}
+
+.buy-steps__item-radiobtns .custom-control:first-child {
+  margin-right: 31px;
+}
+
+.buy-steps__payment .buy-steps__personal .buy-steps__caption {
+  margin-bottom: 30px;
+}
+
+.buy-steps__personal {
+  padding-bottom: 16px;
+}
+
+.buy-steps__payment .buy-steps__billing .buy-steps__caption {
+  margin-bottom: 17px;
+}
+
+.buy-steps__sub-caption {
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 13px;
+}
+
+.buy-steps__billing {
+  padding-bottom: 13px;
+}
+
+@media (min-width: 992px) {
+  .buy-steps__payment-address .buy-steps__btns {
+    margin-right: -90px;
+  }
+}
+/*--------------------------------------------------------------
+# end buy step 2
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# buy step 3
+--------------------------------------------------------------*/
+.buy-steps__payment-upload .buy-steps__caption {
+  line-height: 36px;
+}
+
+.buy-steps__payment-upload .buy-steps__ssl {
+  transform: translateY(4px);
+}
+
+.buy-steps__payment-upload .buy-steps__payment .buy-steps__caption {
+  margin-bottom: 17px;
+}
+
+@media (min-width: 992px) {
+  .buy-steps__payment-upload .buy-steps__payment .buy-steps__caption {
+    margin-right: -15px;
+  }
+}
+
+.buy-steps__payment-upload .buy-steps__sub-caption {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.buy-steps__upload-info {
+  margin-bottom: 40px;
+}
+
+.buy-steps__upload-item {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 15px;
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  padding-left: 24px;
+}
+
+.buy-steps__upload-item::before {
+  content: url(../img/chekmark.svg);
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.buy-steps__upload-space {
+  margin-bottom: 38px;
+}
+
+.buy-steps__upload {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+}
+
+.buy-steps__popover {
+  position: absolute;
+  z-index: 0;
+  top: 14px;
+  left: auto;
+  right: 20px;
+}
+
+.buy-steps__label {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: background 0.24s ease-in-out 0s;
+  padding: 40px 30px;
+}
+
+.dropzone__icon {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.dropzone__image {
+  margin: 0 auto 8px auto;
+  max-width: 100%;
+  max-height: 170px;
+}
+
+.dropzone__title {
+  display: block;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 24px;
+  color: #0d1118;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.dropzone__des {
+  margin-top: auto;
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 20px;
+  color: #777e8a;
+  margin: auto 0 0;
+}
+
+.dropzone__des > span {
+  color: #2048e6;
+}
+
+.buy-steps__skip {
+  font-family: 'ChakraPetchSemiBold';
+  color: #fff;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.buy-steps__skip:hover,
+.buy-steps__skip:focus,
+.buy-steps__skip:active {
+  color: #78ff73;
+}
+
+@media (min-width: 992px) {
+  .buy-steps__payment-upload .buy-steps__btns {
+    margin-right: -55px;
+  }
+}
+
+.buy-steps__btns button {
+  min-width: 110px;
+}
+
+/*--------------------------------------------------------------
+# end buy step 3
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# buy step 4
+--------------------------------------------------------------*/
+.buy-steps__add-card .buy-steps__caption {
+  line-height: 36px;
+}
+
+.buy-steps__add-card .buy-steps__ssl {
+  transform: translateY(4px);
+}
+
+.buy-steps__company-info,
+.buy-steps__caption-des {
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  color: #78ff73;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .buy-steps__caption-des {
+    margin-right: -90px;
+  }
+}
+
+.buy-steps__caption-des::before {
+  content: url(../img/info.svg);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+
+.buy-steps__add-card .buy-steps__payment .buy-steps__caption {
+  margin-bottom: 19px;
+}
+
+.buy-steps__item-cvv {
+  position: relative;
+}
+
+.buy-steps__item-cvv input {
+  padding-right: 30px;
+}
+
+.buy-steps__popover-cvv {
+  position: absolute;
+  top: 41px;
+  left: auto;
+  right: 14px;
+}
+
+.buy-steps__company-info {
+  padding: 17px 0 0;
+  margin-bottom: 16px;
+}
+/*--------------------------------------------------------------
+# end buy step 4
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# user form
+--------------------------------------------------------------*/
+.user-form__header {
+  margin-bottom: 103px;
+}
+
+.user-form__header-title {
+  line-height: 66px;
+  color: #fff;
+}
+
+.user-form_ .label {
+  color: #777e8a;
+}
+
+.user-form__info-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.user-form__info-link {
+  margin-left: 18px;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-form__form {
+  background-color: #fff;
+}
+
+.user-form__item {
+  margin-bottom: 13px;
+}
+
+.user-form__rdbtns {
+  padding: 16px 0 9px;
+}
+
+.user-form__item-label {
+  color: #0d1118;
+  margin-right: 31px;
+}
+
+.user-form__item-label:first-child {
+  margin-right: 0;
+}
+/*--------------------------------------------------------------
+# end user form
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# sign-up
+--------------------------------------------------------------*/
+.user-signup {
+  padding-top: 117px;
+  padding-bottom: 191px;
+}
+
+@media (max-width: 767.98px) {
+  .user-signup {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+.user-signup__form {
+  padding: 22px 60px 18px;
+}
+
+@media (max-width: 767.98px) {
+  .user-signup__form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.user-signup__form-actions {
+  padding: 23px 0 24px;
+}
+
+.user-signup__form-input {
+  border: 1px solid #c3ced7;
+}
+
+.user-signup__form__checkboxes {
+  margin-bottom: 25px;
+}
+
+.user-signup__form-label {
+  color: #0d1118;
+  margin-bottom: 15px;
+}
+
+.user-signup__form-label:first-child {
+  margin-bottom: 0;
+}
+
+.user-signup__form-label a {
+  color: #2048e6;
+}
+
+.user-signup__form-actions .custom-control-label::before,
+.user-form__rdbtns .custom-control-label::before {
+  border-color: #c3ced7;
+}
+
+.user-signup__form-actions .custom-control-input:checked ~ .custom-control-label::before,
+.user-form__rdbtns .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #4700f9;
+  background-color: #4700f9;
+}
+
+.user-form__rdbtns .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+}
+
+.user-signup__form-actions .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../img/check-green.svg);
+}
+/*--------------------------------------------------------------
+# end sign-up
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# user-login
+--------------------------------------------------------------*/
+.user-login {
+  padding-top: 117px;
+  padding-bottom: 191px;
+}
+
+@media (max-width: 767.98px) {
+  .user-login {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+.user-form-login {
+  padding: 25px 60px 15px;
+}
+
+@media (max-width: 767.98px) {
+  .user-form-login {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.user-form__header-login {
+  margin-bottom: 100px;
+}
+
+.user-form-login .user-form__item {
+  margin-bottom: 26px;
+}
+
+.user-login__form-link {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-login__form-btn {
+  margin-left: auto;
+}
+/*--------------------------------------------------------------
+# end user-login
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# confidence
+--------------------------------------------------------------*/
+.confidence {
+  padding: 161px 0 145px;
+}
+
+@media (max-width: 767.98px) {
+  .confidence {
+    padding: 50px 0;
+  }
+}
+
+.confidence__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .confidence__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .confidence__box {
+    margin-bottom: 30px;
+  }
+}
+
+.confidence__box-icon {
+  height: 80px;
+  margin-bottom: 29px;
+}
+
+@media (max-width: 767.98px) {
+  .confidence__box-icon {
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .confidence__box-icon img {
+    max-width: 60px;
+  }
+}
+
+.confidence__box-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #78ff73;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .confidence__box-title {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.confidence__box-desr {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  .confidence__box-desr {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/*--------------------------------------------------------------
+# end confidence
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# contact-us
+--------------------------------------------------------------*/
+.contact-us {
+  padding: 118px 0 112px;
+}
+
+@media (max-width: 767.98px) {
+  .contact-us {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+}
+
+.contact-us__header {
+  margin-bottom: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .contact-us__header {
+    margin-bottom: 50px;
+  }
+}
+
+.contact-us__form {
+  padding: 32px 60px 16px;
+}
+
+@media (max-width: 767.98px) {
+  .contact-us__form {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .contectus__btn {
+    padding-top: 20px;
+  }
+}
+
+.contact-us__form-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 28px;
+  color: #0d1118;
+  margin-bottom: 32px;
+}
+
+.user-form__item-message {
+  margin-bottom: 33px;
+}
+
+.user-form__textarea {
+  resize: none;
+  min-height: 140px;
+  margin-bottom: 0;
+}
+
+.contact-us__btn {
+  margin-left: auto;
+}
+/*--------------------------------------------------------------
+# end contact-us
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# contact-data
+--------------------------------------------------------------*/
+.contact-data {
+  padding-bottom: 160px;
+}
+
+@media (max-width: 767.98px) {
+  .contact-data {
+    padding-bottom: 50px;
+  }
+}
+
+.contact-data-icon {
+  display: block;
+  max-width: 33px;
+  max-height: 33px;
+  margin: 0 auto 23px;
+}
+
+.contact-data__fone-number {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .contact-data__fone-number {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact-data__day-time {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .contact-data__day-time {
+    margin-bottom: 40px;
+  }
+}
+
+.contact-data__day-time span {
+  text-transform: uppercase;
+}
+
+.contact-data__info {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .contact-data__info {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.contact-data__link {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+}
+/*--------------------------------------------------------------
+# end contact-data
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# vacancy
+--------------------------------------------------------------*/
+.vacancy {
+  padding: 112px 0 190px;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy {
+    padding: 50px 0;
+  }
+}
+
+.vacancy__box-title {
+  color: #fff;
+  margin-bottom: 106px;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__box-title {
+    margin-bottom: 60px;
+  }
+}
+
+/* common styles */
+.vacancy__ads-box,
+.vacancy__descr {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 28px 60px;
+}
+
+@media (min-width: 768px) {
+  .vacancy__ads-box,
+  .vacancy__descr {
+    height: 100%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__ads-box,
+  .vacancy__descr {
+    padding: 15px 30px;
+  }
+}
+/* end common styles */
+
+/* vacancy__ads */
+.vacancy__ads-box {
+  background-color: #000;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__ads-box {
+    margin-bottom: 100px;
+  }
+}
+
+.vacancy__ads-list {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__ads-list {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.vacancy__ads-itme {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__ads-itme {
+    margin-bottom: 15px;
+  }
+}
+
+.vacancy__ads-itme:last-child {
+  margin-bottom: 0;
+}
+
+.vacancy__ads-link {
+  color: #fff;
+}
+
+.vacancy__ads-link:focus,
+.vacancy__ads-link:hover,
+.vacancy__ads-link.active {
+  color: #78ff73;
+}
+/* end vacancy__ads */
+
+/* vacancy-descr */
+.vacancy__descr {
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.vacancy__descr-title {
+  font-family: 'ChakraPetchMedium';
+  font-size: 30px;
+  line-height: 36px;
+  color: #0d1118;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__descr-title {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+}
+
+.vacancy__descr-text {
+  font-family: 'ChakraPetchMedium';
+  font-size: 18px;
+  line-height: 32px;
+  color: #0d1118;
+  margin-bottom: 43px;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__descr-text {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+.vacancy__descr-list {
+  font-family: 'ChakraPetchMedium';
+  font-size: 18px;
+  line-height: 32px;
+  color: #0d1118;
+  margin-bottom: 40px;
+  padding-left: 33px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f0f5f9;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__descr-list {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.vacancy__descr-item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__descr-item {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+.vacancy__descr-item::before {
+  content: url(../img/legasy-list-marker.svg);
+  position: absolute;
+  z-index: 0;
+  top: -3px;
+  left: -33px;
+}
+
+.vacancy__descr-item:last-child {
+  margin-bottom: 0;
+}
+
+.vacancy__descr-item span {
+  text-transform: uppercase;
+}
+
+.vacancy__email {
+  font-size: 14px;
+  line-height: 14px;
+  color: #777e8a;
+}
+
+.vacancy__email-link {
+  color: #2048e6;
+}
+
+@media (max-width: 767.98px) {
+  .vacancy__email-link {
+    line-height: 17px;
+  }
+}
+/*--------------------------------------------------------------
+# end vacancy
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# faq
+--------------------------------------------------------------*/
+.faq {
+  padding: 120px 0 192px;
+}
+
+@media (max-width: 767.98px) {
+  .faq {
+    padding: 50px 0 80px;
+  }
+
+  .faq__buttons {
+    margin-bottom: 40px;
+  }
+}
+
+.faq-title {
+  font-family: 'ChakraPetchSemiBold';
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 106px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-title {
+    margin-bottom: 50px;
+  }
+}
+
+.faq__box {
+  background-color: #fff;
+  padding: 31px 60px 28px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__box {
+    padding: 15px 30px;
+  }
+}
+
+.faq__btn {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__btn {
+    font-size: 12px;
+    padding: 0 10px;
+    margin-right: 5px;
+  }
+}
+
+.faq__btn:last-child {
+  margin-right: 0;
+}
+
+.fg__search-wrap {
+  margin: 0 0 61px auto;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 575.98px) {
+  .fg__search-wrap {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+}
+
+.fg__search-wrap::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  background-image: url(../img/search-icon.svg);
+  background-position: 50% 0;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 15px;
+}
+
+.faq__search {
+  border: 1px solid #c3ced7;
+  box-sizing: border-box;
+  padding: 0 4px 0 41px;
+  max-width: 200px;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .faq__search {
+    max-width: 100%;
+  }
+}
+
+/* search placeholder color */
+.input::-webkit-input-placeholder {
+  /* Chrome */
+  color: #9da6b7;
+}
+
+.input::-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  color: #9da6b7;
+}
+
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'ChakraPetchMedium';
+  font-size: 14px;
+  line-height: 14px;
+  color: #9da6b7;
+}
+
+/* faq links */
+.faq__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 152px);
+  gap: 30px;
+  margin: 0 auto;
+  align-items: stretch;
+  margin-bottom: 69px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__links {
+    grid-template-rows: repeat(2, 110px);
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .faq__links {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+  }
+}
+
+.faq__links-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #c3ced7;
+  text-align: center;
+  height: 100%;
+  font-family: 'ChakraPetchMedium';
+  font-size: 18px;
+  line-height: 26px;
+  color: #0d1118;
+  padding: 18px 10px 10px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__links-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.faq__links-link span {
+  display: block;
+}
+
+.faq__links-link span:last-child {
+  padding-top: 2px;
+  color: #777e8a;
+}
+
+.faq__links-link:hover,
+.faq__links-link:focus,
+.faq__links-link:active {
+  color: #2048e6;
+  border-color: #2048e6;
+}
+/* end faq links */
+
+/* faq__list */
+
+.faq__wrap {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__wrap {
+    margin-bottom: 35px;
+  }
+}
+
+.last__items:last-child {
+  margin-bottom: 0;
+}
+
+.faq__list-title {
+  margin-bottom: 40px;
+  line-height: 28px;
+  color: #0d1118;
+}
+
+@media (max-width: 767.98px) {
+  .faq__list-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.faq___item-list {
+  margin-bottom: 36px;
+}
+
+@media (max-width: 767.98px) {
+  .faq___item-list {
+    margin-bottom: 20px;
+  }
+}
+
+.faq__item-items {
+  margin-bottom: 27px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__item-items {
+    margin-bottom: 15px;
+  }
+}
+
+.faq__item-link {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 16px;
+  line-height: 18px;
+  color: #0d1118;
+  display: block;
+  position: relative;
+  z-index: 0;
+  padding-left: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .faq__item-link {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 25px;
+  }
+}
+
+.faq__item-link::before {
+  content: url('../img/info-icon.svg');
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 767.98px) {
+  .faq__item-link::before {
+    top: 3px;
+  }
+}
+
+.faq__item-link:focus,
+.faq__item-link:active,
+.faq__item-link:hover {
+  color: #2048e6;
+  text-decoration: none;
+}
+
+.faq__item-link:focus::before,
+.faq__item-link:active::before,
+.faq__item-link:hover::before {
+  content: url('../img/info-icon-active.svg');
+}
+
+.faq__item-items span {
+  text-transform: uppercase;
+}
+
+.faq__item-items:last-child {
+  margin-bottom: 0;
+}
+/* end faq__list */
+/*--------------------------------------------------------------
+# end faq
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# account varification
+--------------------------------------------------------------*/
+.faq-list {
+  padding: 75px 0 190px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-list {
+    padding: 50px 0 80px;
+  }
+}
+
+.faq-list-box {
+  padding: 27px 60px 30px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+  .faq-list-box {
+    padding: 15px 30px;
+  }
+}
+
+.faq-list__back {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  padding-top: 3px;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.faq-list__back:focus,
+.faq-list__back:active,
+.faq-list__back:hover {
+  color: #78ff73;
+}
+
+.faq-list__back:focus path,
+.faq-list__back:active path,
+.faq-list__back:hover path {
+  fill: #78ff73;
+  transition: all 0.3s linear;
+}
+
+.faq-list__back svg {
+  margin-right: 14px;
+}
+
+.faq-list__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 46px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #0d1118;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-list__title {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.faq-list__item {
+  margin-bottom: 30px;
+}
+
+.faq-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-list__link {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 22px;
+  line-height: 32px;
+  color: #0d1118;
+}
+
+@media (max-width: 767.98px) {
+  .faq-list__link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.faq-list__link:hover,
+.faq-list__link:active,
+.faq-list__link:focus {
+  color: #2048e6;
+}
+
+.faq-list__link span {
+  text-transform: uppercase;
+}
+
+.faq-list__link-date {
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-family: 'ChakraPetchMedium';
+  font-size: 12px;
+  line-height: 12px;
+  color: #777e8a;
+}
+
+@media (min-width: 992px) {
+  .faq-list__links {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .faq-list__links {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f0f5f9;
+  }
+}
+
+.faq-list__links-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-list__links-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.faq-list__links-link {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 24px;
+  color: #0d1118;
+}
+
+.faq-list__links-link.active {
+  color: #2048e6;
+}
+
+@media (max-width: 767.98px) {
+  .faq-list__links-link {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.faq-list__links-link.active,
+.faq-list__links-link:hover,
+.faq-list__links-link:active,
+.faq-list__links-link:focus {
+  color: #2048e6;
+  text-decoration: none;
+}
+
+.faq-list__links span {
+  color: #777e8a;
+}
+/*--------------------------------------------------------------
+# end account varification
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# faq-arcticle
+--------------------------------------------------------------*/
+.faq-arcticle {
+  padding-top: 75px;
+  padding-bottom: 109px;
+}
+
+.faq-arcticle {
+  background-color: #fff;
+}
+
+.faq-arcticle-text {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 32px;
+  color: #0d1118;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-arcticle-text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.faq-arcticle-text:last-child {
+  margin-bottom: 0;
+}
+
+.faq-arctivle-date {
+  font-family: 'ChakraPetchMedium';
+  font-size: 12px;
+  line-height: 12px;
+  color: #777e8a;
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 60px;
+}
+
+.faq-arcticle__bottom {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #f0f5f9;
+  padding-top: 59px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-arcticle__bottom {
+    display: block;
+  }
+}
+
+.faq-arcticle__bottom-actions {
+  margin-left: auto;
+  padding-right: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-arcticle__bottom-actions {
+    padding-top: 20px;
+  }
+}
+
+.faq-arcticle__bottom-link {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #0d1118;
+}
+
+.faq-arcticle__bottom-link:hover,
+.faq-arcticle__bottom-link:active,
+.faq-arcticle__bottom-link:focus {
+  color: #2048e6;
+}
+
+.faq-arcticle__bottom-like,
+.faq-arcticle__bottom-dislike {
+  color: #000;
+}
+
+.faq-arcticle__bottom-like:hover,
+.faq-arcticle__bottom-dislike:hover,
+.faq-arcticle__bottom-like:hover path,
+.faq-arcticle__bottom-dislike:hover path {
+  color: #2048e6;
+  fill: #2048e6;
+}
+
+.faq-arcticle__bottom-like {
+  margin-right: 37px;
+}
+
+.faq__like-icon {
+  transform: translateY(-2px);
+}
+
+.faq__like-icon,
+.faq__dislike-icon {
+  margin-right: 6px;
+}
+
+.faq__like-icon,
+.faq__dislike-icon {
+  fill: #000;
+}
+/*--------------------------------------------------------------
+# end faq-arcticle
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# legal
+--------------------------------------------------------------*/
+.legal-article {
+  max-height: 800px;
+}
+
+.legal-article .mCSB_dragger:hover .mCSB_dragger_bar,
+.legal-article .mCSB_dragger .mCSB_dragger_bar:hover,
+.legal-article .mCSB_dragger .mCSB_dragger_bar:active,
+.legal-article .mCSB_dragger .mCSB_dragger_bar {
+  background: #2048e6 !important;
+}
+
+.legal-article .mCSB_scrollTools .mCSB_draggerRail {
+  background-color: transparent;
+}
+
+.faq-arcticle__list {
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.faq-arcticle__list li {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 767.98px) {
+  .faq-arcticle__list li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/*--------------------------------------------------------------
+# end legal
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# available
+--------------------------------------------------------------*/
+.available-main {
+  padding: 117px 0 160px;
+  background-image: url(../img/world-map-available.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1199.98px) {
+  .available-main {
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .available-main {
+    padding: 50px 0;
+    background-image: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .available-main__wrapper {
+    padding-left: 65px;
+  }
+}
+
+.available-main__title {
+  color: #fff;
+  margin-bottom: 30px;
+  line-height: 66px;
+}
+
+@media (max-width: 767.98px) {
+  .available-main__title {
+    line-height: 28px;
+  }
+}
+
+.available-main__info {
+  font-size: 18px;
+  line-height: 18px;
+  color: #78ff73;
+  margin-bottom: 37px;
+}
+
+.available-main__info::before {
+  content: url(../img/check-green-circle.svg);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.available-main__input {
+  border-color: #78ff73;
+  background-color: transparent;
+  font-family: 'ChakraPetchRegular';
+  margin-right: 20px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.available-main__input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #78ff73;
+}
+
+.available-main__input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #78ff73;
+}
+
+.available-main__input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #78ff73;
+}
+
+.available-main__input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #78ff73;
+}
+
+.available-countries {
+  padding: 160px 0;
+}
+
+@media (max-width: 767.98px) {
+  .available-countries {
+    padding: 50px 0;
+  }
+}
+
+.available-countries__tab-content {
+  background-color: #fff;
+  padding: 40px 0 40px 40px;
+}
+
+@media (max-width: 1199.98px) {
+  .table__countries {
+    width: 930px;
+  }
+}
+
+.table__countries th {
+  font-family: 'ChakraPetchLight';
+  font-size: 12px;
+  line-height: 12px;
+  color: #777e8a;
+  padding: 0 0 20px;
+}
+
+.table__countries td {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #0d1118;
+  padding: 10px 0;
+  vertical-align: middle;
+}
+
+.table__countries td:first-child {
+  width: 261px;
+  padding-right: 10px;
+}
+
+.table__countries td:nth-child(2) {
+  width: 125px;
+  padding-right: 10px;
+}
+
+.table__countries td:nth-child(3) {
+  width: 124px;
+  padding-right: 10px;
+}
+
+.table__countries td:nth-child(4) {
+  width: 278px;
+  padding-right: 10px;
+}
+
+.available-countries__pills {
+  flex-direction: column;
+}
+
+@media (max-width: 1199.98px) {
+  .available-countries__pills {
+    flex-direction: row;
+  }
+}
+
+.available-countries__nav-item:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+@media (max-width: 1199.98px) {
+  .available-countries__nav-item:not(:last-child) {
+    margin-right: 23px;
+  }
+}
+
+.nav-pills .available-countries__nav-link {
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  padding: 0 0 5px;
+  border-radius: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-pills .available-countries__nav-link.active {
+  color: #78ff73;
+  border-color: #78ff73;
+  background: none;
+}
+
+.countries__name,
+.countries__ic {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.countries__ic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.available-countries__tab-content .table-responsive {
+  max-height: 441px;
+  overflow-y: hidden;
+  transition: max-height 1s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.available-countries__tab-content .table-responsive.visibleTable {
+  max-height: 750px;
+  overflow-y: auto;
+}
+
+.available-countries__butt {
+  display: block;
+  max-width: 190px;
+  margin: 0 auto;
+  transform: translateX(-20px);
+}
+/*--------------------------------------------------------------
+# end available
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# fees
+--------------------------------------------------------------*/
+.fees {
+  padding: 114px 0 100px;
+}
+
+@media (max-width: 767.98px) {
+  .fees {
+    padding: 50px 0 10px;
+  }
+}
+
+.fees__title {
+  margin-bottom: 74px;
+}
+
+@media (max-width: 991.98px) {
+  .fees__title {
+    margin-bottom: 30px;
+  }
+}
+
+.fees__title,
+.fees__description {
+  color: #fff;
+}
+
+.fees__info {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .fees__info {
+    margin-bottom: 30px;
+  }
+}
+
+.fees__caption {
+  font-family: 'ChakraPetchMedium';
+  margin-bottom: 20px;
+  color: #78ff73;
+}
+
+.fees__note {
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: -7px;
+}
+
+.fees__description {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.fees__box {
+  color: #0d1118;
+  background-color: #fff;
+  padding: 25px 60px 30px 60px;
+  margin-top: 34px;
+  margin-bottom: 111px;
+  max-width: 750px;
+  margin: 30px auto 111px;
+}
+
+@media (max-width: 1199.98px) {
+  .fees__box {
+    padding: 25px 0 25px 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fees__box {
+    margin-bottom: 65px;
+  }
+}
+
+.fees__volume {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .fees__volume {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .fees__volume-data {
+    margin-bottom: 20px;
+  }
+}
+
+.fees__volume-sum {
+  font-family: 'ChakraPetchMedium';
+  font-size: 32px;
+  line-height: 32px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fees__volume-note {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #777e8a;
+  display: block;
+}
+
+.fees__volume-butt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fees__box-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 47px;
+}
+
+@media (max-width: 767.98px) {
+  .fees__box-title {
+    margin-bottom: 20px;
+  }
+}
+
+.fees__table-wrapper {
+  max-height: 750px;
+  overflow-y: auto;
+  padding-right: 60px;
+}
+
+@media (max-width: 1199.98px) {
+  .fees__table-wrapper {
+    padding-right: 30px;
+  }
+}
+
+.fees__table th {
+  font-family: 'ChakraPetchLight';
+  font-size: 12px;
+  line-height: 12px;
+  color: #777e8a;
+  padding: 0 10px 10px 0;
+}
+
+.fees__table td {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+.fees__table-curr tr:hover {
+  color: #2048e6;
+}
+
+.fees__table-curr td {
+  padding: 20px 10px 0 0;
+  white-space: nowrap;
+}
+
+.fees__table-volume td {
+  padding: 25px 10px 7px 0;
+}
+
+.fees__table-curr td:first-child {
+  min-width: 225px;
+}
+
+.fees__table-curr td:nth-child(2) {
+  min-width: 145px;
+  padding-right: 53px;
+}
+
+.fees__table th:last-child,
+.fees__table td:last-child {
+  text-align: right;
+  padding-right: 0;
+}
+
+@media (max-width: 575.98px) {
+  .fees__table th:last-child,
+  .fees__table td:last-child {
+    padding-right: 10px;
+  }
+}
+
+.fees__table-volume td:first-child {
+  min-width: 200px;
+}
+
+.fees__table-volume td:nth-child(2) {
+  min-width: 145px;
+  padding-right: 53px;
+}
+
+.fees__table-icon,
+.fees__table-name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fees__table-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+td.table-main,
+td.fees__table-name {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.table-light {
+  color: #777e8a;
+}
+
+.table-grey {
+  color: #777e8a;
+}
+
+.table-blue {
+  color: #2048e6;
+}
+/*--------------------------------------------------------------
+# end fees
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# reviews
+--------------------------------------------------------------*/
+.reviews {
+  padding: 114px 0 120px;
+}
+
+@media (max-width: 767.98px) {
+  .reviews {
+    padding: 50px 0;
+  }
+}
+
+.reviews__title {
+  color: #fff;
+  margin-bottom: 73px;
+}
+
+@media (max-width: 767.98px) {
+  .reviews__title {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .reviews__main {
+    margin-bottom: 80px;
+  }
+}
+
+.reviews__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+@media (max-width: 767.98px) {
+  .reviews__info {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+.reviews__rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 6px;
+}
+
+.reviews__rating-text {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  display: block;
+  margin-right: 13px;
+  transform: translateY(5px);
+}
+
+.reviews__rating-pic {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 14px;
+}
+
+.reviews__rating-des,
+.reviews__rating-text > span {
+  color: #78ff73;
+}
+
+.reviews__rating-des {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+}
+
+.reviews__box {
+  padding: 30px 60px;
+  margin-bottom: 65px;
+}
+
+@media (max-width: 575.98px) {
+  .reviews__box {
+    padding: 15px 30px;
+  }
+}
+
+.reviews__box_bg-light {
+  background-color: #fff;
+}
+
+.reviews__box_bg-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.reviews__item,
+.reviews__row-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 575.98px) {
+  .reviews__item,
+  .reviews__row-rating {
+    display: block;
+  }
+
+  .reviews__item:not(:last-child) {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.reviews__row-rating {
+  margin-bottom: 9px;
+}
+
+.reviews__row-data,
+.reviews__row-autor {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'ChakraPetchMedium';
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.reviews__row-data {
+  color: #979aa1;
+}
+
+.reviews__row-autor {
+  color: #0d1118;
+  margin-right: 17px;
+}
+
+.reviews__row-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #0d1118;
+  margin-bottom: 4px;
+}
+
+.reviews__item {
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.reviews__rating-ic {
+  margin-right: 30px;
+}
+
+@media (max-width: 575.98px) {
+  .reviews__rating-ic {
+    margin: 0 0 15px;
+  }
+}
+
+.reviews__exchange {
+  display: flex;
+  align-items: center;
+}
+
+.reviews__exchange-arr {
+  margin: 0 12px;
+}
+
+.reviews__exchange-ic {
+  width: 30px;
+  height: 30px;
+}
+
+.reviews__row-country {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 575.98px) {
+  .reviews__row-country {
+    padding-top: 15px;
+  }
+}
+
+.reviews__country-name {
+  font-family: 'ChakraPetchMedium';
+  color: #979aa1;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  margin-right: 20px;
+}
+
+.reviews__country-ic {
+  width: 33px;
+  height: 33px;
+  flex: 0 0 33px;
+  border-radius: 50%;
+}
+
+.reviews__box-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.reviews-patry .reviews__box-title {
+  margin-bottom: 34px;
+}
+
+.reviews-patry__row {
+  display: flex;
+  align-items: center;
+}
+
+.reviews-patry {
+  margin: 30px 0 100px;
+}
+
+.reviews-patry__row:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.reviews-patry__ic {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.reviews-patry__name {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #78ff73;
+}
+
+.reviews-rates__curr-wrapper {
+  margin-bottom: 28px;
+}
+
+.reviews-rates__curr-wrapper .nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.reviews-rates__curr-wrapper.nav-pills .reviews-rates__curr {
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  padding: 0 0 10px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.reviews-rates__curr-wrapper.nav-pills .reviews-rates__curr:not(:last-child) {
+  margin-right: 27px;
+}
+
+.reviews-rates__curr-wrapper.nav-pills .reviews-rates__curr.active {
+  color: #78ff73;
+  border-color: #78ff73;
+}
+
+.reviews-rates__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+}
+
+@media (max-width: 575.98px) {
+  .reviews-rates__row {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.reviews-rates__row:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.reviews-rates__one-ic {
+  display: block;
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  margin: 0 21px 0 20px;
+}
+
+.reviews-rates__val-ic,
+.reviews-rates__val {
+  margin-right: 10px;
+}
+
+.reviews-rates__val-ic {
+  width: 20px;
+  height: 20px;
+}
+
+.reviews-rates__total {
+  display: block;
+  margin-left: auto;
+}
+
+.reviews-rates__total {
+  padding: 6px 10px;
+  border-radius: 15px;
+  min-width: 80px;
+}
+
+@media (max-width: 575.98px) {
+  .reviews-rates__total {
+    min-width: 70px;
+  }
+}
+
+.up {
+  background: #6cc25f;
+}
+
+.down {
+  background: #ff060a;
+}
+/*--------------------------------------------------------------
+# end reviews
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# about-us
+--------------------------------------------------------------*/
+.about-us {
+  padding: 117px 0 140px;
+}
+
+@media (max-width: 991.98px) {
+  .about-us {
+    padding: 50px 0 50px;
+  }
+}
+
+.about-us__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1199.98px) {
+  .about-us__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-us__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-us__wrapper {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-us__wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__icon-wrap {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 991.98px) {
+  .about-us__icon-wrap {
+    margin-bottom: 30px;
+  }
+}
+
+.about-us__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991.98px) {
+  .about-us__image {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.about-us__image-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .about-us__image-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.today {
+  padding: 160px 0 98px;
+}
+
+@media (max-width: 991.98px) {
+  .today {
+    padding: 50px 0 50px;
+  }
+}
+
+.today__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .today__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .today__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.today__description {
+  font-size: 28px;
+  line-height: 44px;
+  color: #78ff73;
+  margin-bottom: 76px;
+}
+
+@media (max-width: 1199.98px) {
+  .today__description {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .today__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.today__card-wrap {
+  margin-bottom: 60px;
+}
+
+.today__icon-wrap {
+  min-height: 83px;
+  margin-bottom: 31px;
+}
+
+.today__card-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #78ff73;
+}
+
+.suported-assets {
+  padding: 160px 0 192px;
+}
+
+@media (max-width: 991.98px) {
+  .suported-assets {
+    padding: 50px 0 0;
+  }
+}
+
+.suported-assets__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .suported-assets__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .suported-assets__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+}
+
+.suported-assets__description {
+  font-size: 28px;
+  line-height: 44px;
+  color: #78ff73;
+  margin-bottom: 90px;
+}
+
+@media (max-width: 1199.98px) {
+  .suported-assets__description {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .suported-assets__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+}
+
+.suported-assets__wrapper {
+  background-color: #fff;
+  padding: 29px 55px 30px 59px;
+}
+
+@media (max-width: 991.98px) {
+  .suported-assets__wrapper {
+    margin-bottom: 110px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .suported-assets__wrapper {
+    padding: 30px;
+  }
+}
+
+.suported-assets__top-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 28px;
+  color: #000;
+  margin-right: 10px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 575.98px) {
+  .suported-assets__top-title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+select.suported-assets__curency {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  border: none;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 18px;
+  transform: translateY(-10px);
+}
+/*0*/
+.suported-assets__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.suported-assets__item {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media (max-width: 575.98px) {
+  .suported-assets__item {
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .suported-assets__item:last-child {
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.suported-assets__wrapper_fiat .suported-assets__item:last-child .suported-assets__cripto-left {
+  min-width: 152px;
+  align-items: center;
+}
+
+.suported-assets__wrapper_fiat .suported-assets__item:last-child {
+  align-items: center;
+}
+
+.suported-assets__wrapper_fiat .suported-assets__item:last-child .suported-assets__cripto-img {
+  padding-top: 0;
+}
+
+@media (max-width: 575.98px) {
+  .suported-assets__wrapper_fiat .suported-assets__item:last-child .suported-assets__cripto-left {
+    min-width: auto;
+  }
+}
+
+.suported-assets__cripto-left {
+  min-width: 152px;
+  margin-right: 22px;
+}
+/*1*/
+@media (max-width: 575.98px) {
+  .suported-assets__cripto-left {
+    width: 110px;
+    min-width: 110px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+.coming-soon {
+  margin-left: 40px;
+}
+/*.coming-soon {*/
+/*	margin-left: 40px;*/
+/*}*/
+
+@media (max-width: 575.98px) {
+  .coming-soon {
+    margin-left: 0;
+  }
+}
+/*@media (max-width: 575.98px) {*/
+/*	.coming-soon {*/
+/*	margin-left: 0;*/
+/*	}*/
+/*}*/
+
+.suported-assets__cripto-icon {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.suported-assets__cripto-name {
+  margin-bottom: 5px;
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 32px;
+  color: #0d1118;
+}
+
+.suported-assets__cripto-description {
+  font-family: 'ChakraPetchMedium';
+  font-size: 12px;
+  line-height: 12px;
+  color: #777e8a;
+}
+/*2*/
+.suported-assets__cripto-img {
+  padding-top: 6px;
+  margin-right: 22px;
+}
+@media (max-width: 575.98px) {
+  .suported-assets__cripto-img {
+    margin-right: 0;
+  }
+}
+
+.suported-crypto {
+  margin-right: 57px;
+}
+@media (max-width: 575.98px) {
+  .suported-crypto {
+    margin-right: 0;
+  }
+}
+
+.suported-assets__cripto-right {
+  width: 115px;
+  text-align: left;
+}
+@media (max-width: 575.98px) {
+  .suported-assets__cripto-right {
+    width: 75px;
+    text-align: left;
+  }
+  .suported-assets__wrapper_fiat .suported-assets__cripto-right {
+    width: 115px;
+    text-align: left;
+  }
+}
+.suported-assets__cripto-icon-duable {
+  margin-right: -10px;
+  z-index: 1;
+}
+
+.statistics {
+  padding: 160px 0 160px;
+}
+
+@media (max-width: 991.98px) {
+  .statistics {
+    padding: 50px 0 50px;
+  }
+}
+
+.statistics__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1199.98px) {
+  .statistics__title {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .statistics__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+.statistics-item {
+  margin-bottom: 20px;
+}
+
+.statistics-item:last-child {
+  margin-bottom: 0;
+}
+
+.statistics__procents {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 28px;
+  color: #fff;
+  padding: 26px 0 27px 40px;
+}
+
+@media (max-width: 1199.98px) {
+  .statistics__procents {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .statistics__procents {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 0 12px 12px;
+  }
+}
+
+.statistics__blue {
+  background: #7ab9ff;
+  width: 38%;
+}
+
+.statistics__green {
+  background: #4cdd94;
+  width: 73%;
+}
+
+.statistics__orange {
+  background: #ffcb49;
+  width: 110%;
+}
+
+.statistics__red {
+  background: #ff7e49;
+  width: 165%;
+}
+
+@media (max-width: 991.98px) {
+  .statistics__blue {
+    width: 24%;
+  }
+
+  .statistics__green {
+    width: 44%;
+  }
+
+  .statistics__orange {
+    width: 66%;
+  }
+
+  .statistics__red {
+    width: 88%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .statistics__blue {
+    width: 20%;
+  }
+
+  .statistics__green {
+    width: 30%;
+  }
+
+  .statistics__orange {
+    width: 42%;
+  }
+
+  .statistics__red {
+    width: 55%;
+  }
+}
+
+.statistics__description {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 22px;
+  line-height: 22px;
+  color: #fff;
+  background-color: rgba(122, 185, 255, 0.4);
+  width: 100%;
+  padding: 29px 40px 30px 0;
+}
+
+@media (max-width: 1199.98px) {
+  .statistics__description {
+    font-size: 16px;
+    line-height: 16px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .statistics__description {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 12px 12px 12px 12px;
+  }
+}
+
+.benefits {
+  padding: 160px 0 206px;
+}
+
+@media (max-width: 991.98px) {
+  .benefits {
+    padding: 50px 0 50px;
+  }
+}
+
+.benefits__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 76px;
+}
+
+@media (max-width: 1199.98px) {
+  .benefits__title {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .benefits__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+.benefits__card-wrap {
+  margin-bottom: 54px;
+}
+
+.benefits__icon-wrap {
+  min-height: 80px;
+  margin-bottom: 31px;
+}
+
+.benefits__card-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  color: #78ff73;
+}
+
+.benefits__card-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.benefits__button {
+  padding: 34px 0 0;
+}
+
+.benefits__btn {
+  margin: 0 auto;
+  height: 34px;
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  padding: 0 30px;
+}
+
+.benefits__btn::after,
+.benefits__btn::before {
+  border: 7px solid transparent;
+  border-bottom: 7px solid #78ff73;
+}
+
+.legal-security {
+  padding: 160px 0 191px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+@media (max-width: 991.98px) {
+  .legal-security {
+    padding: 50px 0 50px;
+  }
+}
+
+.legal-security__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .legal-security__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .legal-security__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.legal-security__description {
+  font-size: 28px;
+  line-height: 44px;
+  color: #78ff73;
+  margin-bottom: 20px;
+}
+
+.legal-security__description:last-child {
+  margin-bottom: 65px;
+}
+
+@media (max-width: 1199.98px) {
+  .legal-security__description {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .legal-security__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.legal-security__description-text {
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .legal-security__box {
+    margin-bottom: 40px;
+  }
+}
+
+.legal-security__box-icon {
+  height: 80px;
+  margin-bottom: 25px;
+}
+
+.legal-security__box-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #78ff73;
+  margin-bottom: 20px;
+}
+
+.legal-security__box-desr {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  margin-bottom: 0;
+}
+/*--------------------------------------------------------------
+# end about-us
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# api
+--------------------------------------------------------------*/
+.api {
+  padding: 117px 0 162px;
+}
+
+@media (max-width: 991.98px) {
+  .api {
+    padding: 50px 0 0;
+  }
+}
+
+.api__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .api__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .api__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.api__title-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 991.98px) {
+  .api__title-description {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.api__title-traders {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 46px;
+  line-height: 46px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .api__title-traders {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .api__title-traders {
+    font-size: 20px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+}
+
+.api__title-traders-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 991.98px) {
+  .api__title-traders-description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .api-traders__wrapper:first-child {
+    margin-bottom: 65px;
+  }
+}
+
+.api-traders__icon-wrap {
+  width: 160px;
+  height: 160px;
+  background-color: #78ff73;
+  border-radius: 50%;
+  margin: 0 auto 27px;
+  overflow: hidden;
+}
+
+@media (max-width: 1199.98px) {
+  .api-traders__icon-wrap {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+}
+
+.api-traders__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #78ff73;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 1199.98px) {
+  .api-traders__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.api-traders__description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1199.98px) {
+  .api-traders__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.api-traders__button {
+  border: none;
+  display: block;
+  width: 183px;
+  height: 48px;
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 48px;
+  background: url(../img/go-to-apiary.svg);
+  line-height: 50px;
+  background-color: transparent;
+  color: #78ff73;
+  margin: 0 auto;
+}
+
+.api-traders__button:hover,
+.api-traders__button:active,
+.api-traders__button:focus {
+  filter: grayscale(100%);
+  color: #78ff73;
+}
+
+.bitcoin-api {
+  padding: 160px 0 175px;
+  background: #000 url(../img/dark_pattern.png);
+  position: relative;
+  z-index: 0;
+}
+
+.bitcoin-api::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-api {
+    padding: 50px 0 50px;
+  }
+}
+
+.bitcoin-api__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 46px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1199.98px) {
+  .bitcoin-api__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-api__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.bitcoin-api__description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 74px;
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-api__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.bitcoin-api__btn {
+  margin: 0 auto;
+  height: 46px;
+  font-size: 30px;
+  line-height: 46px;
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-api__btn {
+    width: 174px;
+    height: 22px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.api-atms {
+  padding: 180px 0 180px;
+}
+
+@media (max-width: 991.98px) {
+  .api-atms {
+    padding: 50px 0 50px;
+  }
+}
+
+.octagon-green::after,
+.octagon-green::before {
+  border: 30px solid transparent;
+  border-bottom: 30px solid #78ff73;
+}
+
+.api-atms__wrapper {
+  background-color: #78ff73;
+  padding: 41px 40px 30px;
+}
+
+@media (max-width: 991.98px) {
+  .api-atms__wrapper {
+    margin-bottom: 65px;
+  }
+}
+
+.api-atms__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.api-atms__title-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.api-atms__button {
+  width: 155px;
+}
+
+.api-atms__mass-wrapper {
+  padding-left: 100px;
+}
+
+@media (min-width: 992px) {
+  .api-atms__mass-wrapper {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .api-atms__mass-wrapper {
+    padding-left: 0;
+  }
+}
+
+.api-atms__mass-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 20px;
+}
+
+.api-atms__mass-description {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.api-atms__mass-description span {
+  color: #78ff73;
+}
+
+.automated {
+  padding: 160px 0 163px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+@media (max-width: 1199.98px) {
+  .automated {
+    padding: 50px 0 50px;
+  }
+}
+
+.automated__icon-wrap {
+  width: 160px;
+  height: 160px;
+  background-color: #78ff73;
+  border-radius: 50%;
+  margin: 0 auto 26px;
+  overflow: hidden;
+}
+
+@media (max-width: 1199.98px) {
+  .automated__icon-wrap {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+}
+
+.automated__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #78ff73;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 1199.98px) {
+  .automated__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.automated__description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1199.98px) {
+  .automated__description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.automated__description span {
+  color: #78ff73;
+}
+
+.automated__button {
+  border: none;
+  display: block;
+  width: 183px;
+  height: 48px;
+  background: url(../img/go-to-apiary.svg);
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 50px;
+  background-color: transparent;
+  color: #78ff73;
+  margin: 0 auto;
+}
+/*--------------------------------------------------------------
+# end api
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# rates
+--------------------------------------------------------------*/
+.сryptocurrency-rates {
+  padding: 117px 0 159px;
+}
+
+@media (max-width: 767.98px) {
+  .сryptocurrency-rates {
+    padding: 50px 0 50px;
+  }
+}
+
+.сryptocurrency-rates__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 49px;
+}
+
+@media (max-width: 767.98px) {
+  .сryptocurrency-rates__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .сryptocurrency-rates__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.rates {
+  max-width: 770px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rates__top {
+  margin: 0 auto 29px;
+  max-width: 770px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .rates__buttons {
+    padding-top: 10px;
+  }
+}
+
+.rates__button {
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0 0 5px;
+}
+
+.rates__button:first-child {
+  margin-right: 17px;
+}
+
+.rates__button.active,
+.rates__button:hover {
+  color: #78ff73;
+  border-bottom-color: #78ff73;
+  transition: 0.3s;
+}
+
+.search__wrapper {
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+}
+
+.rates__input {
+  border: 1px solid rgba(120, 255, 115, 0.5);
+  background-color: transparent;
+  color: #78ff73;
+  padding: 9px 10px 8px 37px;
+  width: 268px;
+}
+
+.rates__input::-webkit-input-placeholder {
+  color: #78ff73;
+  opacity: 1;
+}
+
+.rates__input::-moz-placeholder {
+  color: #78ff73;
+  opacity: 1;
+}
+
+.rates__input:-ms-input-placeholder {
+  color: #78ff73;
+  opacity: 1;
+}
+
+.rates__input:-moz-placeholder {
+  color: #78ff73;
+  opacity: 1;
+}
+
+.rates__search-icon {
+  position: absolute;
+  z-index: 0;
+  top: 9px;
+  left: 14px;
+}
+
+.rates__list {
+  margin: 0 auto 38px;
+}
+
+.rates__list-item {
+  background-color: #fff;
+  padding: 24px 40px 27px;
+  margin-bottom: 20px;
+}
+
+.rates__list-item:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+  .rates__list-item {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rates__list-item {
+    flex-direction: column;
+  }
+}
+
+.rates__list-crypto {
+  max-width: 220px;
+  width: 100%;
+  margin-right: 22px;
+}
+
+@media (max-width: 767.98px) {
+  .rates__list-crypto {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rates__list-crypto {
+    margin-bottom: 20px;
+  }
+}
+
+.rates__crypto-icon {
+  margin-right: 20px;
+}
+
+.rates__crypto-text {
+  margin: 0;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #000;
+}
+
+.rates__crypto-text span {
+  color: #777e8a;
+}
+
+.rates__list-procent {
+  margin-right: 41px;
+}
+
+@media (max-width: 767.98px) {
+  .rates__list-procent {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rates__list-procent {
+    margin-bottom: 20px;
+  }
+}
+
+.rates__procent-icon {
+  margin-right: 5px;
+}
+
+.rates-procent-text {
+  margin: 0;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #f30909;
+}
+
+.procent-green {
+  color: #36c640;
+  margin-right: 5px;
+}
+
+.rates__list-schedule {
+  margin-right: 60px;
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .rates__list-schedule {
+    order: 5;
+    width: 100%;
+    flex: 0 0 100%;
+    margin-right: 0;
+    padding-top: 20px;
+  }
+}
+
+.rates__btn {
+  width: 108px;
+  flex: 0 0 108px;
+  color: #0d1118;
+}
+
+@media (max-width: 767.98px) {
+  .rates__btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rates__btn {
+    flex: none;
+    margin: 0;
+  }
+}
+
+.rates-paginator__item {
+  margin-right: 20px;
+}
+
+.rates-paginator__item:first-child {
+  margin-right: 26px;
+}
+
+.rates-paginator__item:last-child {
+  margin-left: 4px;
+  margin-right: 0;
+}
+
+.rates-paginarot-link {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.rates-paginarot-link.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.rates-paginarot-link.active,
+.togs {
+  color: #78ff73;
+}
+
+.quick-trading__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 46px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.quick-trading__description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 60px;
+}
+
+.quick-trading__cart-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.quick-trading__cart-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .quick-trading__box {
+    margin-bottom: 40px;
+  }
+
+  .quick-trading__cart-title,
+  .quick-trading__cart-description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .quick-trading__box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.quick-trading-button {
+  padding: 70px 0 168px;
+}
+
+@media (max-width: 767.98px) {
+  .quick-trading-button {
+    padding: 50px 0 50px;
+  }
+}
+
+.quick-trading-btn {
+  display: inline-block;
+  vertical-align: middle;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  padding: 0 30px;
+}
+
+.quick-trading-btn::before,
+.quick-trading-btn::after {
+  border: 8px solid transparent;
+  border-bottom: 8px solid #78ff73;
+}
+/*--------------------------------------------------------------
+# end rates
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# affiliate
+--------------------------------------------------------------*/
+.invite {
+  padding: 120px 0 42px;
+}
+
+@media (max-width: 991.98px) {
+  .invite {
+    padding: 50px 0 0;
+  }
+}
+
+.ivite__title,
+.invite__title-test {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.invite__title-test {
+  color: #78ff73;
+}
+
+@media (max-width: 991.98px) {
+  .ivite__title,
+  .invite__title-test {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ivite__title,
+  .invite__title-test {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.invite__title-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+}
+
+@media (max-width: 991.98px) {
+  .invite__title-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .invite__title-description {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.invite-offers {
+  padding: 0 0 158px;
+}
+
+@media (max-width: 991.98px) {
+  .invite-offers {
+    padding: 50px 0 50px;
+  }
+}
+
+.invite-offers__img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  background-color: #78ff73;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+.invite-offers__description {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  color: #78ff73;
+  margin-bottom: 10px;
+}
+
+.invite-offers__text {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 55px;
+  line-height: 55px;
+  color: #fff;
+}
+
+@media (max-width: 1199.98px) {
+  .invite-offers__img-box {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .invite-offers__icon {
+    width: 50%;
+    height: 50%;
+  }
+
+  .invite-offers__description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .invite-offers__text {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .invite-offers__wrap {
+    margin-bottom: 30px;
+  }
+}
+
+.invite-offers__link {
+  font-size: 22px;
+  line-height: 22px;
+  color: #78ff73;
+  background: url(../img/invite-offers-link.svg);
+  width: 282px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 59px;
+}
+
+@media (max-width: 991.98px) {
+  .invite-offers__link {
+    margin-top: 20px;
+  }
+}
+
+.invite-offers__link:hover,
+.invite-offers__link:focus,
+.invite-offers__link:active {
+  filter: grayscale(100%);
+}
+
+.crypto-platform {
+  padding: 160px 0 160px;
+}
+
+@media (max-width: 991.98px) {
+  .crypto-platform {
+    padding: 50px 0 50px;
+  }
+}
+
+.crypto-platform__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.crypto-platform__description {
+  font-size: 28px;
+  line-height: 44px;
+  color: #78ff73;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 1199.98px) {
+  .crypto-platform__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .crypto-platform__description {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .crypto-platform__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .crypto-platform__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.crypto-platform__card-wrap {
+  margin-bottom: 60px;
+}
+
+.crypto-platform__icon-wrap {
+  min-height: 80px;
+  margin-bottom: 31px;
+}
+
+.crypto-platform__card-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  color: #78ff73;
+}
+
+.crypto-platform__card-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.referral-program {
+  padding: 160px 0 170px;
+  background: #000 url(../img/dark_pattern.png);
+  position: relative;
+  z-index: 0;
+}
+
+.referral-program::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+@media (max-width: 991.98px) {
+  .referral-program {
+    padding: 50px 0 50px;
+  }
+}
+
+.referral-program__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 46px;
+  line-height: 46px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.referral-program__description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199.98px) {
+  .referral-program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .crypto-platform__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .referral-program__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .referral-program__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.referral-program__button {
+  padding: 55px 0 0;
+}
+
+.referral-program__btn {
+  margin: 0 auto;
+  height: 46px;
+  font-size: 30px;
+  line-height: 46px;
+}
+
+@media (max-width: 991.98px) {
+  .referral-program__btn {
+    width: 164px;
+    height: 22px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.referral-program__wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.referral-program__wrapper::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 349px;
+  height: 350px;
+  background-image: url(../img/left_referral.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: -125px;
+  left: 51px;
+}
+
+.referral-program__wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 324px;
+  height: 394px;
+  background-image: url(../img/right_referral.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: -160px;
+  right: 132px;
+}
+
+@media (max-width: 1199.98px) {
+  .referral-program__wrapper::before {
+    background-size: 70%;
+    top: -25px;
+    left: 15px;
+  }
+
+  .referral-program__wrapper::after {
+    background-size: 70%;
+    top: -25px;
+    right: -65px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .referral-program__wrapper::before,
+  .referral-program__wrapper::after {
+    display: none;
+  }
+}
+
+.asked-questions {
+  padding: 165px 0 122px;
+}
+
+@media (max-width: 991.98px) {
+  .asked-questions {
+    padding: 50px 0;
+  }
+}
+
+.asked-questions__title {
+  line-height: 76px;
+  color: #fff;
+  margin-bottom: 97px;
+}
+
+@media (max-width: 1199.98px) {
+  .asked-questions__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .asked-questions__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 80px;
+  }
+}
+
+.affiliate-form {
+  padding: 158px 0 159px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+@media (max-width: 991.98px) {
+  .affiliate-form {
+    padding: 50px 0 50px;
+  }
+}
+
+.affiliate-form__title {
+  line-height: 76px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+.affiliate-form__wrap {
+  margin-bottom: 11px;
+}
+
+.affiliate-form__wrap:nth-child(2),
+.affiliate-form__wrap:last-child {
+  margin-bottom: 0;
+}
+
+.affiliate-form__wrap:last-child {
+  padding-top: 66px;
+}
+
+@media (max-width: 991.98px) {
+  .affiliate-form__wrap:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .affiliate-form__title {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .affiliate-form__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+.affiliate-form__wrapper-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991.98px) {
+  .affiliate-form__wrapper-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.affiliate-form__input {
+  padding: 0 5px;
+  width: 100%;
+  height: 50px;
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 22px;
+  color: tomato;
+  background-color: transparent;
+  border: 2px solid #78ff73;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.affiliate-form__input:focus {
+  border: 2px solid #000;
+  background-color: #fff;
+}
+
+.affiliate-form__input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #78ff73;
+  opacity: 1;
+}
+
+.affiliate-form__input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #78ff73;
+  opacity: 1;
+}
+
+.affiliate-form__input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #78ff73;
+  opacity: 1;
+}
+
+.affiliate-form__input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #78ff73;
+  opacity: 1;
+}
+
+.affiliate-form__img {
+  margin-right: auto;
+  width: 310px;
+  margin-top: -15px;
+}
+
+.affiliate-form__btn {
+  line-height: 44px;
+  margin-left: auto;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@media (max-width: 575.98px) {
+  .affiliate-form__button {
+    padding-top: 0px;
+  }
+
+  .affiliate-form__btn {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+/*--------------------------------------------------------------
+# end affiliate
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# cards
+--------------------------------------------------------------*/
+.purchases {
+  padding: 82px 0 165px;
+}
+
+@media (max-width: 991.98px) {
+  .purchases {
+    padding: 50px 0 50px;
+  }
+}
+
+.purchases__card-img {
+  max-width: 292px;
+  width: 100%;
+  height: 187px;
+  margin-bottom: 40px;
+}
+
+.purchases__card-text {
+  position: relative;
+  z-index: 0;
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 18px;
+  color: #78ff73;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+.purchases__card-text::before {
+  content: url(../img/purchases-card-icon.svg);
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 219px;
+}
+
+.purchases__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .purchases__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .purchases__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.purchases__description {
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 45px;
+}
+
+@media (max-width: 1199.98px) {
+  .purchases__description {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .purchases__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+}
+
+.purchases__btn {
+  margin: 0 auto;
+  height: 37px;
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 37px;
+  padding: 0 30px;
+}
+
+.purchases__btn::after,
+.purchases__btn::before {
+  border: 7px solid transparent;
+  border-bottom: 7px solid #78ff73;
+}
+
+.how-works {
+  padding: 163px 0 165px;
+}
+
+@media (max-width: 991.98px) {
+  .how-works {
+    padding: 50px 0 50px;
+  }
+}
+
+.how-works__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .how-works__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .how-works__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.how-works__description {
+  font-size: 28px;
+  line-height: 44px;
+  color: #78ff73;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1199.98px) {
+  .how-works__description {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 300px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .how-works__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.how-works__number {
+  position: relative;
+  z-index: 0;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 66px;
+  line-height: 66px;
+  color: #78ff73;
+  margin-right: 31px;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 1199.98px) {
+  .how-works__number {
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.how-works__number::before {
+  content: url(../img/how-works-line.png);
+  position: absolute;
+  z-index: 0;
+  left: 100px;
+  bottom: 22px;
+}
+
+@media (max-width: 1199.98px) {
+  .how-works__number::before {
+    display: none;
+  }
+}
+
+.note-line::before {
+  display: none;
+}
+
+.how-works__number-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 35px;
+  color: #78ff73;
+  margin-bottom: 19px;
+}
+
+@media (max-width: 1199.98px) {
+  .how-works__number-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.how-works__number-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+@media (max-width: 1199.98px) {
+  .how-works__number-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.how-works__button {
+  padding-top: 73px;
+}
+
+@media (max-width: 991.98px) {
+  .how-works__button {
+    padding-top: 43px;
+  }
+}
+
+.bitcoin-card {
+  padding: 163px 0 150px;
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-card {
+    padding: 50px 0 50px;
+  }
+}
+
+.bitcoin-card__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 67px;
+}
+
+@media (min-width: 992px) {
+  .bitcoin-card__list {
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .bitcoin-card__title {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-card__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-card__text-row {
+    text-align: center;
+  }
+}
+
+.bitcoin-card__description {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 26px;
+  line-height: 46px;
+  color: #fff;
+}
+
+@media (max-width: 1199.98px) {
+  .bitcoin-card__description {
+    font-size: 18px;
+    line-height: 33px;
+  }
+}
+
+.bitcoin-card__description-text {
+  color: #78ff73;
+}
+
+.bitcoin-card__lis-item {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  color: #78ff73;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+  padding-left: 36px;
+  padding: 0;
+  padding-left: 37px;
+}
+
+@media (max-width: 1199.98px) {
+  .bitcoin-card__lis-item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-card__lis-item {
+    padding-left: 0;
+  }
+}
+
+.bitcoin-card__lis-item:last-child {
+  margin-bottom: 0;
+}
+
+.bitcoin-card__lis-item::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 14px;
+  height: 1px;
+  background-color: #78ff73;
+  top: 17px;
+  left: 3px;
+}
+
+@media (max-width: 991.98px) {
+  .bitcoin-card__lis-item::before {
+    display: none;
+  }
+}
+
+.trustworthy {
+  padding: 162px 0 142px;
+}
+
+@media (max-width: 991.98px) {
+  .trustworthy {
+    padding: 50px 0 50px;
+  }
+}
+
+.trustworthy__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1199.98px) {
+  .trustworthy__title {
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .trustworthy__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+.trustworthy__card-wrap {
+  margin-bottom: 42px;
+}
+
+@media (max-width: 991.98px) {
+  .trustworthy__card-wrap {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+.trustworthy__number-wrap {
+  width: 80px;
+  height: 80px;
+  background-color: #78ff73;
+  border-radius: 50%;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 991.98px) {
+  .trustworthy__number-wrap {
+    margin: 0 auto 20px;
+  }
+}
+
+.trustworthy__number {
+  margin: 0 auto;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 32px;
+  color: #0d1118;
+}
+
+.trustworthy__card-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 34px;
+  margin-bottom: 19px;
+  color: #78ff73;
+}
+
+.trustworthy__card-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.transparent {
+  padding: 160px 0 190px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+@media (max-width: 991.98px) {
+  .transparent {
+    padding: 50px 0 0;
+  }
+}
+
+.transparent__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 1199.98px) {
+  .transparent__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .transparent__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.transparent__title-description {
+  font-size: 28px;
+  line-height: 44px;
+  color: #78ff73;
+  margin-bottom: 47px;
+}
+
+@media (max-width: 1199.98px) {
+  .transparent__title-description {
+    font-size: 18px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .transparent__title-description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.transparent__btn {
+  margin: 0 auto 100px;
+  width: 315px;
+  height: 34px;
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  padding: 0 30px;
+}
+
+.transparent__btn::after,
+.transparent__btn::before {
+  border: 7px solid transparent;
+  border-bottom: 7px solid #78ff73;
+}
+
+.transparent__table-wrapper {
+  background-color: #fff;
+  padding: 14 40px 15px 61px;
+}
+
+@media (max-width: 991.98px) {
+  .transparent__table-wrapper {
+    background-color: #fff;
+    padding: 14px 30px;
+    margin-bottom: 100px;
+  }
+}
+
+.transparent__table {
+  margin: 0;
+}
+
+.transparent__table td {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 14px;
+  line-height: 14px;
+  color: #0d1118;
+}
+
+.transparent__table th,
+.transparent__table td {
+  padding: 15px 0;
+  vertical-align: baseline;
+}
+
+.transparent__table th:first-child {
+  width: 190px;
+}
+
+.transparent__table td:nth-child(2) {
+  width: 99px;
+}
+
+.transparent__table td:nth-child(3) {
+  width: 108px;
+}
+
+.transparent__table-title {
+  font-family: 'ChakraPetchRegular';
+  font-size: 12px;
+  line-height: 12px;
+  color: #777e8a;
+}
+
+.tranparent__table-action {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.transparent__table .table_blue {
+  color: #2048e6;
+}
+
+.transparent__table .table_orange {
+  color: #ff880e;
+}
+
+.why-us {
+  padding: 165px 0 114px;
+}
+
+@media (max-width: 991.98px) {
+  .why-us {
+    padding: 50px 0 50px;
+  }
+}
+
+.why-us__title {
+  line-height: 66px;
+  color: #fff;
+  margin-bottom: 86px;
+}
+
+@media (max-width: 1199.98px) {
+  .why-us__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .why-us__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+}
+
+.why-us__card-wrap {
+  margin-bottom: 44px;
+}
+
+.why-us__icon-wrap {
+  min-height: 70px;
+  margin-bottom: 6px;
+}
+
+.why-us__card-title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  color: #78ff73;
+}
+
+.why-us__card-description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.wallets-faq {
+  padding: 160px 0 119px;
+  background-image: url(../img/pattern-blu.svg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+.wallets-faq::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to top, rgba(71, 0, 249, 1) 0%, rgba(71, 0, 249, 1) 10%, rgba(71, 0, 249, 1) 10%, rgba(71, 0, 249, 0) 100%);
+}
+
+@media (max-width: 991.98px) {
+  .wallets-faq {
+    padding: 50px 0 50px;
+  }
+}
+
+.wallets-faq__title {
+  line-height: 76px;
+  color: #fff;
+  margin-bottom: 101px;
+}
+
+@media (max-width: 1199.98px) {
+  .wallets-faq__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .wallets-faq__title {
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+}
+
+.debit-card {
+  padding: 160px 0 174px;
+  background: #000 url(../img/dark_pattern.png);
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 991.98px) {
+  .debit-card {
+    padding: 50px 0;
+  }
+}
+
+.debit-card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 100%);
+}
+
+.debit-card__card-img {
+  max-width: 292px;
+  width: 100%;
+  height: 187px;
+  margin-bottom: 60px;
+}
+
+.debit-card__title {
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 46px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 67px;
+}
+
+@media (max-width: 991.98px) {
+  .debit-card__title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+.debit-card__description {
+  font-family: 'ChakraPetchRegular';
+  font-size: 22px;
+  line-height: 32px;
+  color: #78ff73;
+  margin-bottom: 53px;
+}
+
+@media (max-width: 991.98px) {
+  .debit-card__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+  }
+}
+
+.debit-card__btn {
+  margin: 0 auto;
+  height: 48px;
+  font-family: 'ChakraPetchSemiBold';
+  font-size: 30px;
+  line-height: 48px;
+  color: #000;
+}
+
+@media (max-width: 575.98px) {
+  .debit-card__btn {
+    font-size: 15px;
+    line-height: 20px;
+    height: 20px;
+    padding: 0 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# end cards
+--------------------------------------------------------------*/
+
+.buy-steps__checkboxes {
+  width: 100%
+}
+
+.custom-control.is-invalid {
+  margin-bottom: 0 !important
+}
+
+input ~ .invalid-feedback,
+div.is-invalid ~ .invalid-feedback,
+.input.is-invalid ~ .invalid-feedback,
+.custom-control.is-invalid ~ .invalid-feedback {
+  display: block;
+  padding: 5px;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.row.is-invalid ~ .invalid-feedback {
+  margin: -9px 0 9px 0
+}
+
+.alert-wallet {
+  font-size: 12px;
+  padding: 5px 8px
+}
+
+body.modal-open {
+  padding: 0 !important;
+  overflow: auto !important
+}

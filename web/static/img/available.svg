@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>home/icons/available</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Lavachange-Homepage" transform="translate(-155.000000, -572.000000)">
+            <g id="01" transform="translate(134.000000, 55.000000)">
+                <g id="text" transform="translate(0.000000, 95.000000)">
+                    <g id="btn" transform="translate(0.000000, 409.000000)">
+                        <g id="home/icons/available" transform="translate(21.000000, 13.000000)">
+                            <circle id="Oval" fill="#60D803" cx="13" cy="13" r="13"></circle>
+                            <path d="M8.73331617,12.396301 C8.35782452,11.9913016 7.72511156,11.9673809 7.32011222,12.3428726 C6.91511288,12.7183642 6.89119218,13.3510772 7.26668383,13.7560765 L10.9046116,17.6798878 C11.3209465,18.1289399 12.0394534,18.1017076 12.4206034,17.6224298 L18.7826756,9.62242984 C19.1264341,9.19017004 19.0546896,8.5610829 18.6224298,8.2173244 C18.19017,7.87356589 17.5610829,7.94531036 17.2173244,8.37757016 L11.5798055,15.4664792 L8.73331617,12.396301 Z" id="Path-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

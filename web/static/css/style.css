@@ -1,0 +1,346 @@
+/*--------------------------------------------------------------
+# fonts
+--------------------------------------------------------------*/
+@font-face {
+	font-family: 'AvenirNextCyr-Bold';
+	src: url('../fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr-Bold/AvenirNextCyr-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Medium';
+	src: url('../fonts/AvenirNextCyr-Medium/AvenirNextCyr-Medium.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr-Medium/AvenirNextCyr-Medium.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Regular';
+	src: url('../fonts/AvenirNextCyr-Regular/AvenirNextCyr-Regular.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr-Regular/AvenirNextCyr-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyr-Light';
+	src: url('../fonts/AvenirNextCyr-Light/AvenirNextCyr-Light.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr-Light/AvenirNextCyr-Light.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+/*--------------------------------------------------------------
+# end fonts
+--------------------------------------------------------------*/
+*:focus {
+    outline: none!important;
+}
+
+body {
+    font-family: 'AvenirNextCyr-Medium';
+    font-size: 15px;
+    color: #040C36;
+}
+
+.steps__box_light {
+    padding: 40px;
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.steps__box_title {
+    font-family: 'AvenirNextCyr-Bold';
+    line-height: 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 0 38px 0;
+}
+
+@media (max-width: 991.98px) {
+    .steps__box_title {
+        margin-bottom: 20px;
+    }
+}
+
+.steps__inf {
+    margin-bottom: 30px;
+}
+
+.form__item {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 32px;
+}
+
+.input {
+    /* font-family: 'AvenirNextCyr-Regular'; */
+    background-color: transparent;
+    padding: 5px 0 0px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 10, 63, 0.1);
+    display: block;
+    width: 100%;
+    margin: 0 0 23px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.input_small::-webkit-input-placeholder { 
+    color: #040C36;
+    opacity: 0.5;
+}
+.input_small::-moz-placeholder { 
+    color: #040C36;
+    opacity: 0.5;
+}
+.ininput_smallput:-ms-input-placeholder { 
+    color: #040C36;
+    opacity: 0.5;
+}
+.input_small:-moz-placeholder { 
+    color: #040C36;
+    opacity: 0.5;
+}
+
+.input_small {
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.form__card_day {
+    width: 60px;
+    flex: 0 0 60px;
+}
+.form__card_day, .form__card_year {
+    margin-right: 29px;
+}
+
+.form__card_year {
+    width: 60px;
+    flex: 0 0 60px;
+}
+
+.popover_wrap {
+    position: relative;
+    z-index: 0;
+}
+
+.form__card_cvv {
+    width: 105px;
+    flex: 0 0 105px;
+}
+
+.popover_box {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.steps__form_footer {
+    padding-top: 7px;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'AvenirNextCyr-Bold';
+    padding: 15px 30px 14px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.button_bg_red {
+    background-image: linear-gradient(112deg, #FC141C 0%, #E02020 100%);
+    background-color: #FC141C;
+    color: #fff;
+}
+
+.steps__btn-link {
+    font-family: 'AvenirNextCyr-Bold';
+    color: #040C36;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.step__box_agree {
+    margin-bottom: 25px;
+}
+
+.step__box_cap {
+    margin-bottom: 15px;
+}
+
+.step__box_agree .custom-control-label::before {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #E5E6EB;
+    top: -3px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.step__box_agree .custom-control-label::after {
+    width: 25px;
+    height: 25px;
+    top: -3px;
+}
+
+.step__box_agree .custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+    background-image: url(../img/check.svg);
+}
+
+.step__box_agree  .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #E5E6EB;
+    background-color: transparent;
+}
+
+.step__box_agree .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    border-color: #E5E6EB;
+}
+
+.step__box_agree .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
+.step__box_agree .custom-control-label {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.custom-control-label a:hover {
+    opacity: 0.7;
+}
+
+.custom-control-label a {
+    color: #040C36;
+    text-decoration: underline;
+}
+
+.popover .close {
+    transform: translateY(-7px);
+}
+
+.popover_wrap .popover_box {
+    right: 0;
+    top: 4px;
+}
+
+.steps__inf_ic {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    line-height: 20px;
+    margin: 0 15px 0 0;
+    color: #fff;
+    background: #FFB24D;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.steps__inf_text {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.steps__inf_ic, .steps__inf_text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.steps__inf_text_bottom {
+    margin-bottom: 30px;
+}
+
+.steps__btn-link:hover {
+    text-decoration: none;
+    color: #FC141C;
+    opacity: 1;
+}
+
+.input__box {
+    position: relative;
+    z-index: 0;
+}
+
+.erorrs {
+    color: #FC141C;
+    font-size: 12px;
+    line-height: 24px;
+    display: block;
+    position: absolute;
+    z-index: 0;
+}
+
+.notifications {
+    padding: 0;
+}
+
+.notifications .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.notifications .cryptocurrency-faq__text {
+    margin-bottom: 0;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.notifications .cryptocurrency-faq__title {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+@media (max-width: 575.99px) {
+    .notifications .cryptocurrency-faq__title {
+        font-size: 35px;
+        line-height: 45px;
+        margin: 0 0 30px 0;
+    }
+
+    .notifications .cryptocurrency-faq__text {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.notifications .box__crypto_success {
+    background-image: linear-gradient(-45deg, #C5FF52 0%, #6CD200 100%);
+    background-color: #C5FF52;
+    box-shadow: 0 40px 70px 0 rgba(182,182,202,0.25);
+}
+
+.notifications img {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+}
+
+iframe[id^='st-'] {width: 100%}
+button#continue_bt:disabled {background: grey}
